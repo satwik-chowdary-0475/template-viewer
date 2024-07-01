@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<div class="asim-container px-10 w-100">
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="ecommerce/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <!-- Blank Row -->
+            <div class="row">
+                &nbsp;
+            </div>
+            <h5>Inventory</h5>
+            <div><small class="form-text text-muted">
+                Trigger inventory update from Assure Magic to E-commerce channel.
+            </small></div>
+            <div class="form-group row">
+                <div class="col-md-3 form-label-group">
+                    <select id="selectChannel" class="mr-0 form-control custom-select custom-select-sm isRequired2">
+                        <option>Choose a channel</option>
+                    </select>
+                    <control-messages></control-messages>
+                    <label for="channelName" id="channelName">Channel Name</label>
+                </div>
+            </div>
+            <div>
+                <label for="isSyncRequired">Sync Required</label>
+                <input type="checkbox" id="isSyncRequired" name="syncRequired">
+            </div>
+            <!-- Blank Row -->
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Inventory Update</h5>
+                            <div class="col-md-1 mt-sm-auto">
+                                <span class="pointer mdi mdi-plus btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="Update Inventory" id="upload-product"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Consolidated Inventory Update</h5>
+                            <span class="pointer mdi mdi-plus btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="Consolidated Inventory Update" id="consolidated-inventory-update"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <!--product upload modal-->
+    <upload modal>
+        <div class="modal" tabindex="-1" role="dialog" id="upload-product-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Inventory Update</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="inventory-form">
+                        <div class="product-file">
+                            <input type="file" class="custom-file-input" id="product-file">
+                            <label class="custom-file-label" for="product-file" id="product-file-name">Choose
+                                file</label>
+                        </div>
+                        <a th:href="@{/resources/csv/sample-update-inventory.csv}" target="_blank">Download Sample</a>
+                        <br>
+                            <div>
+                                <label for="location" id="location-code">Enter Location Code</label>
+                                <input type="text" name="locationCode" id="location">
+                            </div>
+                            <div><small class="form-text text-muted">
+                                Location against which inventory update needs to be triggered to E-commerce channel.
+                            </small></div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-sm btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn-sm btn btn-primary" id="process-data">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </upload>
+
+    <upload inventory>
+        <div class="modal" tabindex="-1" role="dialog" id="upload-consolidated-inventory-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Consolidated Inventory Update</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="consolidated-inventory-form">
+                            <div class="product-file">
+                                <input type="file" class="custom-file-input" id="consolidated-inventory-file">
+                                <label class="custom-file-label" for="product-file" id="consolidated-inventory-file-name">Choose
+                                    file</label>
+                            </div>
+                            <a th:href="@{/resources/csv/sample-consolidated-update-inventory.csv}" target="_blank">Download Sample</a>
+                            <br>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-sm btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn-sm btn btn-primary" id="process-consolidated-inventory-data">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </upload>
+</div>
+
+
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<script th:src="@{/resources/js/ecommerce/inventory.js}"></script>
+
+
+</body>
+
+</html>

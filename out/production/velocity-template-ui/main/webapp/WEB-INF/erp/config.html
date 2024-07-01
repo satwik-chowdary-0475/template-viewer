@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<div class="asim-container px-10 w-100">
+<div class="row mx-0 h-100">
+    <div class="col-2 p-0">
+        <div th:replace="erp/fragments.html :: sidebar"></div>
+    </div>
+    <div class="col-md-10">
+        <div class="container-fluid px-sm-4">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center flex-wrap mb-3">
+                            <h5 class="mb-0 mr-3">Channel</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group row" id="channel-name">
+                                    <label class="col-4 col-md-4 col-lg-4 col-form-label">Channel Name</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-md-4 col-lg-4 col-form-label">Channel Type</label>
+                                    <label class="col-8 col-md-8 col-lg-8 font-weight-bold col-form-label">ERP</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center flex-wrap mb-3">
+                            <h5 class="mb-0 mr-3">Channel Login Credentials</h5>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap mb-3"><small class="form-text text-muted">
+                            Credentials to authenticate Assure Magic to ERP channel.
+                        </small></div>
+                        <div class="row">
+                            <div class="col-12" id="login-credentials">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--   update credential modal-->
+            <div class="modal" id="update-credential-modal" tabindex="-1" role="dialog" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" >Update Credentials</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group row">
+                                <span class="col-md-3 form-label-group">Key</span>
+                                <span class="col-md-6 form-label-group">Value</span>
+                            </div>
+                            <form id="update-credential-form"></form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal" >Cancel</button>
+                            <button type="button" class="btn btn-primary btn-sm" id="update-credentials" >Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center flex-wrap mb-3">
+                            <h5 class="mb-0 mr-3">Locations</h5>
+                            <span class="pointer mdi mdi-plus btn-sm btn-success" data-toggle="tooltip"
+                                  data-placement="bottom"
+                                  title="Add New Location" id="add-new-location"></span>
+                            <span class="pointer mdi mdi-refresh btn-sm btn-primary ml-1 mr-2" data-toggle="tooltip"
+                                  data-placement="bottom" title="Refresh" id="refresh-locations"></span>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap mb-3"><small class="form-text text-muted">
+                            Locations cofigured in ERP for Assure Magic.
+                        </small></div>
+                        <div class="row">
+                            <!-- Table -->
+                            <div class="col-md-12">
+                                <table class="table table-hover table-sm" id="location-table">
+                                    <thead class="thead-light">
+                                    <th scope="col">Location Code</th>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="my-3">Increff Login Credentials</h5>
+                                <div class="d-flex align-items-center flex-wrap mb-3"><small class="form-text text-muted">
+                                    Credentials to authenticate ERP channel to Assure Magic.
+                                </small></div>
+                                <div class="form-group row" id="login-credentials-username">
+                                    <label class="col-5 col-md-6 col-form-label">USERNAME</label>
+                                </div>
+                                <div class="form-group row" id ="login-credentials-password">
+                                    <label class="col-5 col-md-6 col-form-label">PASSWORD</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center flex-wrap mb-3">
+                            <h5 class="mb-0 mr-3">ERP Channel Mapping</h5>
+                            <span class="pointer mdi mdi-plus btn-sm btn-success" data-toggle="tooltip"
+                                  data-placement="bottom"
+                                  title="Add New Location" id="add-new-channel-mapping"></span>
+                            <span class="pointer mdi mdi-refresh btn-sm btn-primary ml-1 mr-2" data-toggle="tooltip"
+                                  data-placement="bottom" title="Refresh" id="refresh-channel-mapping"></span>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap mb-3"><small class="form-text text-muted">
+                            Marketplace to customer code mappings to recognise marketplace in ERP.
+                        </small></div>
+                        <div class="row">
+                            <!-- Table -->
+                            <div class="col-md-12">
+                                <table class="table table-hover table-sm" id="channel-mapping-table">
+                                    <thead class="thead-light">
+                                    <th scope="col">Name</th>
+                                    <th scope="col">ERP ChannelCode(channelName)</th>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="add-location-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Location Code</h5>
+                    </div>
+                    <div th:replace="common/fragments.html ::location-form"></div>
+                    <div class="modal-footer" id="add-location-modal-footer">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Cancel
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm" id="add-location">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="modal" tabindex="-1" role="dialog" id="add-channel-mapping-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Channel Mapping</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-12">
+                            <form id="channel-mapping-form" onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="font-weight-bold col-md-5 col-form-label text-md-right"
+                                           for="channel-mapping-name">Channel Name</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control form-control-sm isRequired1" autocomplete="off"
+                                               type="text"
+                                               name="channelName" id="channel-mapping-name" placeholder="Enter Channel Name">
+                                    </div>
+                                    <label class="font-weight-bold col-md-5 col-form-label text-md-right"
+                                           for="channel-code">ERP Channel Code</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control form-control-sm isRequired1" autocomplete="off"
+                                               type="text"
+                                               name="channelCode" id="channel-code" placeholder="Enter Channel Code">
+                                    </div>
+                                    <input type="hidden" id="erp-channel-name" name="erpChannelName">
+                                </div>
+                            </form>    <!--here-->
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="add-channel-mapping-modal-footer">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Cancel
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm" id="add-channel-mapping">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/erp/config.js}"></script>
+
+
+</body>
+
+</html>

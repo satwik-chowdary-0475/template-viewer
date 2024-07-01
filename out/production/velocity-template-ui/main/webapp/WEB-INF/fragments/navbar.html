@@ -1,0 +1,30 @@
+<com-navbar th:fragment="navbar">
+    <nav class="navbar navbar-expand-md fixed-top asim-navbar shadow-sm" id="navbar">
+        <div class="container-fluid px-0">
+            <a href="javascript:void(0);">
+                <i class="material-icons asim-sidebar-menu-icon" id="show-sidebar">menu</i>
+                <div th:replace="fragments/sidebar.html :: sidebar"> </div>
+            </a>
+            <a class="navbar-brand d-inline-flex align-items-center ml-2" th:href="@{/ui/site/home}">
+                <i class="increff-client-icons">increff-logo</i>
+                <span class="ml-2" >Asim</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#asimCollapseRightNavMenu">
+                <span class="material-icons">more_vert</span>
+            </button>
+            <div class="collapse navbar-collapse" id="asimCollapseRightNavMenu">
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-inline-flex align-items-center dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="material-icons mr-1">account_circle</span>
+                            <span id="asim-logged-in-user"></span>
+                        </a>
+                        <ul class="dropdown-menu asim-dropdown-menu px-2">
+                            <li><a href="javascript:void(0)" onclick="logout();">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</com-navbar>

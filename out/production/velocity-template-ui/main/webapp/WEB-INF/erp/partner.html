@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+
+<!--<com-snackbar th:replace="snippets.html :: snackbar"></com-snackbar>-->
+<div class="asim-container px-10 w-100">
+<!-- Top row with form-->
+<div class="row mx-0 h-100">
+    <div class="col-2 p-0">
+        <div th:replace="erp/fragments.html :: sidebar"></div>
+    </div>
+    <div class="col-md-10">
+        <div class="container-fluid px-sm-4">
+        <form onsubmit="return false;">
+        <h5>Partners</h5>
+        <div class="form-group row">
+    <div class="col-md-3 form-label-group">
+        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-partner-type" name="partnerType">
+            <option selected="" hidden="" disabled="" value="">Select Partner Type</option>
+            <option value="vendor">VENDOR</option>
+            <option value="customer">CUSTOMER</option>
+        </select>
+        <control-messages></control-messages>
+        <label class="" for="select-partner-type">Partner Type</label>
+    </div>
+        <div class="col-12 col-sm-8 col-lg-9 mt-3 mt-sm-auto">
+        <span class="pointer mdi mdi-plus btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="Add Partner" id="add-partner"></span>
+        <span class="mdi mdi-search-web btn-sm btn-primary pointer ml-1 mr-2"  data-toggle="tooltip" data-placement="bottom" title="Show Partners" id="show-partners"></span>
+        </div>
+    </div>
+    </form>
+
+    <!-- Blank Row -->
+    <div class="row">
+        &nbsp;
+    </div>
+    <div class="row">
+
+        <!-- Table -->
+        <div class="col-md-12">
+            <table class="table table-hover" id="partner-table">
+                <thead class="thead-light">
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="modal" id="view-location-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Locations</h5>
+                </div>
+                <div class="modal-body">
+                    <div class ="table-responsive">
+                            <table class=" table table-hover table-sm" id="location-table">
+                                <thead class="thead-light">
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                <div class="modal-footer" id="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="add-partner-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Partner</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="add-partner-form">
+                        <div class="form-group row">
+                            <div class="col-md-3 form-label-group">
+                                <input class="form-control isRequired3" placeholder="Enter partner code" type="text" id="partner-code" autocomplete="off" name="partnerCode">
+                                <label for="partner-code">Partner Code</label>
+                                <control-messages></control-messages>
+                            </div>
+                            <div class="col-md-3 form-label-group">
+                                <input class="form-control isRequired3"placeholder="Enter partner name" type="text" id="partner-name" autocomplete="off" name="partnerName">
+                                <label for="partner-name">Partner Name</label>
+                                <control-messages></control-messages>
+                            </div>
+                            <div class="col-md-3 form-label-group">
+                                <input type="checkbox" id="partner-isExcessGrnAllowed" name="partnerIsExcessGrnAllowed">
+                                <label for="partner-isExcessGrnAllowed">Is Excess Grn Allowed</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h5> Contact Details </h5>
+                        <div th:replace="fragments/address.html :: contact-fragment"> </div>
+                        <hr>
+                        <h5> Address </h5>
+                        <div th:replace="fragments/address.html :: address-fragment"> </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn-sm btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn-sm btn btn-primary" id="create-partner">Create</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="add-partner-location-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Partner Location</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="add-partner-location-form">
+                        <div class="form-group row">
+                            <input type="hidden" name="partnerCode">
+                            <div class="col-md-4 form-label-group">
+                                <input class="form-control isRequired3" placeholder="Enter partner code" type="text" id="partner-location-code" autocomplete="off" name="locationCode">
+                                <label for="partner-location-code">Partner Location Code</label>
+                                <control-messages></control-messages>
+                            </div>
+                            <div class="col-md-3 form-label-group">
+                                <input class="form-control isRequired3"placeholder="Enter gstin" type="text" id="gstin" autocomplete="off" name="gstin">
+                                <label for="gstin">GST In</label>
+                                <control-messages></control-messages>
+                            </div>
+                            <hr>
+                            <fieldset id = "billing-address" name = "billingAddress" style="padding:25px">
+                                <h4> Billing Address </h4>
+                                <h5> Contact Details </h5>
+                                <div th:replace="fragments/address.html :: contact-fragment"> </div>
+                                <h5> Address </h5>
+                                <div th:replace="fragments/address.html :: address-fragment"> </div>
+                            </fieldset>
+                            <hr>
+                            <fieldset id = "shipping-address" name = "shippingAddress" style="padding:25px">
+                                <h4> Shipping Address </h4>
+                                <h5> Contact Details </h5>
+                                <div th:replace="fragments/address.html :: contact-fragment"> </div>
+                                <h5> Address </h5>
+                                <div th:replace="fragments/address.html :: address-fragment"> </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-sm btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn-sm btn btn-primary" id="create-partner-location">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- Container end-->
+<asim-audit th:replace="fragments/audit.html :: audit"></asim-audit>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/erp/partner.js}"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<div class="asim-container px-10 w-100">
+<div class="row mx-0 h-100">
+    <div class="col-2 p-0">
+        <div th:replace="erp/fragments.html :: sidebar"></div>
+    </div>
+    <div class="col-md-10">
+        <!-- Blank Row -->
+        <div class="row">
+            &nbsp;
+        </div>
+            <h5>Initialize ERP Channel</h5>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="form-group row">
+                <div class="col-md-12">
+            <span class="pointer mdi mdi-plus btn-sm btn-success" data-toggle="tooltip" data-placement="bottom"
+                  title="Add New Channel" id="add-new-channel"></span>
+                    <span class="pointer mdi mdi-refresh btn-sm btn-primary ml-1 mr-2" data-toggle="tooltip"
+                          data-placement="bottom" title="Refresh" id="refresh-channels"></span>
+                </div>
+            </div>
+
+        <!-- Blank Row -->
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+
+            <!-- Table -->
+            <div class="col-md-12">
+                <table class="table table-hover" id="channel-table">
+                    <thead class="thead-light">
+                    <th scope="col" style="width: 50%;">Channel Name</th>
+                    <th scope="col" style="width: 50%;">Integration Type</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="add-channel-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Channel</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="col-12">
+                            <form id="channel-form">
+                                <div class="form-group row">
+                                    <label class="font-weight-bold col-md-5 col-form-label text-md-right"
+                                           for="channel-name">Channel Name</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control form-control-sm isRequired1" autocomplete="off"
+                                               type="text" name="channelName" id="channel-name"
+                                               placeholder="Enter Channel Name">
+                                        <control-messages></control-messages>
+                                    </div>
+                                    <input type="hidden" id="channelType" name="channelType" value="ERP">
+                                </div>
+                                <div class="form-group row"><div class="font-weight-bold col-md-12 col-form-label text-md-left"><small class="form-text text-muted">
+                                   ERP channel name for ASIM configuration.
+                                </small></div></div>
+                                <div class="form-group row">
+                                    <label class="font-weight-bold col-md-5 col-form-label text-md-right"
+                                           for="integrationType">Integration Type</label>
+                                    <div class="col-md-7">
+                                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" onchange="urlCheck(this);" id="integrationType" name="integrationType">
+                                            <option value="ASSURE_MAGIC">Assure Magic</option>
+                                            <option value="OTHERS">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="font-weight-bold col-md-10 col-form-label text-md-left"><small class="form-text text-muted">
+                                        The type of integration for which testing is to be done - Assure Magic or other type of integration.
+                                    </small></div></div>
+                                <div class="form-group row" id="ifUrl" style="display:none;">
+                                    <label class="font-weight-bold col-md-5 col-form-label text-md-right"
+                                           for="channel-url">Channel Url</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control form-control-sm isRequired1" autocomplete="off"
+                                               type="text" name="channelUrl" id="channel-url"
+                                               placeholder="Enter Channel Url">
+                                        <control-messages></control-messages>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="font-weight-bold col-md-5 col-form-label text-md-right">Login
+                                        Credentials</label>
+                                </div>
+                                <div class="form-group row"><div class="font-weight-bold col-md-12 col-form-label text-md-left"><small class="form-text text-muted">
+                                    Credentials to authenticate Assure Magic to ERP.
+                                </small></div></div>
+
+                                <div class="table-responsive">
+                                    <table class=" table table-hover table-sm" id="user-attribute">
+                                        <thead class="thead-light">
+                                        <tr>
+                                            <th class="w-35 pl-2">Credential Key</th>
+                                            <th class="w-35 pl-2">Credential Value</th>
+                                            <th class="w-30 pl-2">Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><input class="form-control form-control-sm isRequired3" type="text"
+                                                       id="attr-credential-key" autocomplete="off"
+                                                       placeholder="Enter Credential Key">
+                                                <control-messages></control-messages>
+                                            </td>
+                                            <td><input class="form-control form-control-sm isRequired3" type="text"
+                                                       id="attr-credential-value" autocomplete="off"
+                                                       placeholder="Enter Credential Value">
+                                                <control-messages></control-messages>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-link p-1" data-toggle="tooltip"
+                                                        data-placement="bottom" title="Add" id="add-key"><i
+                                                        class="mdi mdi-check-bold align-middle"></i></button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>    <!--here-->
+                        </div>
+                    </div>
+
+                    <div class="modal-footer" id="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Cancel
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm" id="create-channel">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<script th:src="@{/resources/js/erp/initialise.js}"></script>
+
+</body>
+
+</html>

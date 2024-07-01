@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<div class="asim-container px-10 w-100">
+
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="ecommerce/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <form id="search-return-order" onsubmit="return false;">
+                <div class="form-group row">
+                    <div class="col-md-3 form-label-group">
+                        <input class="form-control isRequired3" placeholder="Search" type="text" id="returnOrderId"
+                               autocomplete="off" name="returnOrderId">
+                        <label for="returnOrderId">Return Order Id</label>
+                    </div>
+                    <div class="col-md-3 form-label-group">
+                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-channel" name="select-channel">
+                            <option selected="" hidden="" disabled="" value="">Select Channel</option>
+                        </select>
+                        <control-messages></control-messages>
+                    </div>
+                    <div class="col-md-3 mt-auto">
+                        <label class="d-md-none col-12">&nbsp;</label>
+                        <span class="mdi mdi-search-web btn-sm btn-primary pointer" data-toggle="tooltip"
+                              data-placement="bottom" title="Search Return Order" id="fetch-return-order"></span>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                &nbsp;
+            </div>
+
+            <div class="row">
+                <!-- Table -->
+                <div class="col-12">
+                    <table class="table table-hover" id="return-order-table">
+                        <thead class="thead-light">
+                        <th scope="col" style="width: 10%;">Return Order Id</th>
+                        <th scope="col" style="width: 10%;">Channel Name</th>
+                        <th scope="col" style="width: 10%;">Forward Order Id</th>
+                        <th scope="col" style="width: 10%;">Location Code</th>
+                        <th scope="col" style="width: 10%;">Return Order Type</th>
+                        <th scope="col" style="width: 10%;">Action</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<asim-audit th:replace="fragments/audit.html :: audit"></asim-audit>
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<script th:src="@{/resources/js/ecommerce/searchReturnOrder.js}"></script>
+
+
+</body>
+
+</html>

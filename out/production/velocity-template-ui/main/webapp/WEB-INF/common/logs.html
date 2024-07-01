@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<!-- Top row with form-->
+<div class="asim-container px-10 w-100">
+    <div class="row mx-0 h-100">
+        <div class="col-md-2 p-0">
+            <div th:replace="common/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="container-fluid px-sm-4">
+                <div class="row">
+                    &nbsp;
+                </div>
+                <h5>Search Logs</h5>
+            </div>
+        </div>
+
+    </div> <!-- Container end-->
+</div>
+<asim-audit th:replace="fragments/audit.html :: audit"></asim-audit>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/logs.js}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+.snack-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2499;
+  background-color: transparent;
+}
+
+.snackbar {
+  bottom: -4rem;
+  left: 2rem;
+  z-index: 2500;
+  min-width: 21rem;
+  transition: bottom 300ms cubic-bezier(.6,-.28,.74,.05);
+}
+
+.snackbar.active {
+  bottom: 2rem;
+  transition: bottom 300ms cubic-bezier(.18,.89,.32,1.28);
+}
+
+.notify-dialog {
+  top: 5rem;
+  right: -23rem;
+  z-index: 2500;
+  min-width: 17rem;
+  max-width: 19rem;
+  max-height: 14rem;
+  overflow: auto;
+  overflow-wrap: break-word;
+  transition: right 300ms cubic-bezier(.6,-.28,.74,.05);
+}
+
+.notify-dialog.active {
+  right: 2rem;
+  transition: right 300ms cubic-bezier(.18,.89,.32,1.28);
+}
+
+@media (max-width: 575px) {
+  .snackbar {
+    right: 0;
+    left: 0;
+  }
+
+  .snackbar.active { bottom: 0!important; }
+
+  .notify-dialog {
+    min-width: 14rem;
+    max-width: 14rem;
+  }
+}
+
+tr.hide-table-padding td {
+  padding: 0;
+}
+
+.expand-button {
+	position: relative;
+}
+
+.accordion-toggle .expand-button:after
+{
+  position: absolute;
+  left:.75rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  content: '-';
+}
+
+.form-label-group {
+  position: relative;
+  padding-top: 10px;
+  margin-top: 14px;
+}
+
+.form-control, .custom-file-label {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-width: 2px;
+  font-size: 14px;
+}
+
+.form-label-group > input,
+.form-label-group > .custom-select,
+.form-label-group > label {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  bottom: 10px
+  user-select: none;
+  cursor: text;
+  transition: 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.form-label-group input::placeholder {
+  opacity: 0;
+  user-select: none;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label,
+.form-label-group .custom-select ~ label,
+.form-label-group input:focus ~ label {
+  top: -16px;
+  left: 4px;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-weight: bold !important;
+  cursor: default;
+}
+
+.form-label-group input:focus::placeholder {
+  opacity: 1;
+  transition: 300ms cubic-bezier(0.89, 0.42, 0.45, 1.35);
+}
+
+/* here */
+.form-control:focus { box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; }
+
+.snack-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2499;
+  background-color: transparent;
+}
+
+.snackbar {
+  bottom: -4rem;
+  left: 2rem;
+  z-index: 2500;
+  min-width: 21rem;
+  transition: bottom 300ms cubic-bezier(.6,-.28,.74,.05);
+}
+
+.snackbar.active {
+  bottom: 2rem;
+  transition: bottom 300ms cubic-bezier(.18,.89,.32,1.28);
+}
+
+.notify-dialog {
+  top: 3.5rem;
+  right: -37rem;
+  z-index: 2500;
+  min-width: 17rem;
+  max-width: 35rem;
+  max-height: 14rem;
+  overflow: auto;
+  overflow-wrap: break-word;
+  transition: right 300ms cubic-bezier(.6,-.28,.74,.05);
+}
+
+.notify-dialog.active {
+  right: 0rem;
+  transition: right 300ms cubic-bezier(.18,.89,.32,1.28);
+}
+
+@media (max-width: 575px) {
+  .snackbar {
+    right: 0;
+    left: 0;
+  }
+
+  .snackbar.active { bottom: 0!important; }
+
+  .notify-dialog {
+    min-width: 14rem;
+    max-width: 14rem;
+  }
+
+  .tooltip {
+    pointer-events: none;
+  }
+
+.pointer,
+.pointer:hover { cursor: pointer!important; }
+
+﻿

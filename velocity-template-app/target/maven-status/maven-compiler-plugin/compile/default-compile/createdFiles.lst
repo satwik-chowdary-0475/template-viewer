@@ -1,0 +1,4 @@
+com/increff/velocity/template/app/dto/PdfDto.class
+com/increff/velocity/template/app/config/WebAppInitializer.class
+com/increff/velocity/template/app/controller/PdfController.class
+com/increff/velocity/template/app/config/SpringConfig.class

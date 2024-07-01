@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+
+<!--<com-snackbar th:replace="snippets.html :: snackbar"></com-snackbar>-->
+<div class="asim-container px-10 w-100">
+<!-- Top row with form-->
+<div class="row mx-0 h-100">
+    <div class="col-2 p-0">
+        <div th:replace="erp/fragments.html :: sidebar"></div>
+    </div>
+    <div class="col-md-10">
+        <div class="container-fluid px-sm-4">
+            <form onsubmit="return false;">
+                <div class="row">
+                    &nbsp;
+                </div>
+                <h5>Sales Posting</h5>
+                <div class="form-group row">
+                    <div class="col-md-3 form-label-group">
+                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-erp-channel" name="erpChannelId">
+                            <option selected="" hidden="" disabled="" value="">Select ERP Channel</option>
+                        </select>
+                        <control-messages></control-messages>
+                        <label class="" for="select-erp-channel">ERP Channel</label>
+                    </div>
+                    <div class="col-md-1 mt-sm-auto">
+                        <span class="pointer mdi mdi-forward btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="Sales Posting" id="fetch-erp-channel"></span>
+                    </div>
+                </div>
+                <div><small class="form-text text-muted">
+                    Select the ERP Channel for Sales Posting
+                </small></div>
+                <div class="form-group row">
+                    <div class="col-md-3 form-label-group">
+                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-channel" name="channelId">
+                            <option selected="" hidden="" disabled="" value="">Select Channel</option>
+                        </select>
+                        <control-messages></control-messages>
+                        <label class="" for="select-channel">Channel</label>
+                    </div>
+                    <div class="col-md-3 form-label-group">
+                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-location" name="locationCode">
+                            <option selected="" hidden="" disabled="" value="">Select Location</option>
+                        </select>
+                        <control-messages></control-messages>
+                        <label class="" for="select-location">Location</label>
+                    </div>
+                    <div class="col-md-3 form-label-group">
+                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-event-type" name="eventType">
+                            <option selected="" hidden="" disabled="" value="">Select Event Type</option>
+                            <option value="OUTWARD_ORDER_CREATE">OUTWARD_ORDER_CREATE</option>
+                            <option value="OUTWARD_ORDER_COMPLETE">OUTWARD_ORDER_COMPLETE</option>
+                            <option value="OUTWARD_ORDER_CANCEL">OUTWARD_ORDER_CANCEL</option>
+                            <option value="OUTWARD_ORDER_PARTIAL_CANCEL">OUTWARD_ORDER_PARTIAL_CANCEL</option>
+                        </select>
+                        <control-messages></control-messages>
+                        <label class="" for="select-event-type">Event Type</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Order Posting with Existing Products</h5>
+                                    <p class="card-text">This will trigger Order Posting call with channelSkuCode of existing products.</p>
+                                    <div class="col-md-1 mt-sm-auto">
+                                        <span class="pointer mdi mdi-forward btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="Sales Posting" id="post-order"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Order Posting By Uploading Products</h5>
+                                <p class="card-text">This will trigger Order Posting call with channelSkuCode by uploading details.</p>
+                                <span class="pointer mdi mdi-plus btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="upload-posting" id="upload-posting"></span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="upload-b2c-posting-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Upload B2C Posting Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="upload-b2c-posting-form">
+                        <fieldset id ="billing-address" name="billingAddress">
+                        <h5> Billing Address </h5>
+                            <h8> Contact Details </h8>
+                            <div th:replace="fragments/address.html :: contact-fragment"> </div>
+                            <div  th:replace="fragments/address.html :: address-fragment">
+                        </div>
+                        </fieldset>
+                        <hr>
+                        <fieldset id="shipping-address" name="shippingAddress">
+                            <h5> Shipping Address </h5>
+                            <h8> Contact Details  </h8>
+                            <div class="float-right form-label-group">
+                                <uli style="list-style-type:none;">
+                            <li><label for="posting-sameAsBillingAddress">
+                                <input type="checkbox" id="posting-sameAsBillingAddress" name="addressSameAsBilling">
+                                     Same as BillingAddress</label></li>
+                                </uli>
+                        </div>
+                            <div th:replace="fragments/shippingAddress.html :: shipping-contact-fragment"> </div>
+                            <div th:replace="fragments/shippingAddress.html :: shipping-address-fragment"></div>
+                        </fieldset>
+                    </form>
+                <div class="col-md-5 mt-auto">
+                    <div class="product-file">
+                        <input type="file" class="custom-file-input" id="product-file">
+                        <label class="custom-file-label" for="product-file" id="product-file-name">Choose file</label>
+                        <a style="" th:href="@{/resources/csv/sample-b2b-Posting.csv}" target="_blank">Download Sample</a>
+                    </div>
+                </div>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-sm btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn-sm btn btn-primary" id="upload-b2c-posting">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Container end-->
+</div>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/erp/salesPosting.js}"></script>
+
+
+</body>
+
+</html>

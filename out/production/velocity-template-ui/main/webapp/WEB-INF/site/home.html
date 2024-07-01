@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+    <com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<!-- Top row with form-->
+<div class="asim-container px-10 w-100">
+    <div class="col-12">
+        <h5>Common</h5>
+        <div class="row">
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/common/product}">
+                    <h5
+                    ><i class="mdi mdi-tshirt-crew mdi-48px"></i></h5
+                    >
+                    <p>Product</p>
+                </a>
+            </div>
+            <!--<div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/common/logs}">
+                    <h5
+                    ><i class="mdi mdi-feature-search-outline mdi-48px"></i></h5
+                    >
+                    <p>Logs</p>
+                </a>
+            </div>-->
+        </div>
+        <h5>E-Commerce</h5>
+        <div class="row">
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/initialise}">
+                    <h5><i class="mdi mdi-cog-outline mdi-48px"></i></h5>
+                    <p>Configuration</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/url-config}">
+                    <h5><i class="mdi mdi-tune mdi-48px"></i></h5>
+                    <p>Magic URL Configuration</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/inventory}">
+                    <h5><i class="mdi mdi-archive mdi-48px"></i></h5>
+                    <p>Inventory</p>
+                </a>
+            </div>
+
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/integration-schedulers}">
+                    <h5
+                    ><i class="mdi mdi-camera-timer mdi-48px"></i></h5
+                    >
+                    <p>Integration Schedulers</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/search-outward-order}">
+                    <h5
+                    ><i class="mdi mdi-feature-search-outline mdi-48px"></i></h5
+                    >
+                    <p>Search Outward Orders</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/process-outward-order}">
+                    <h5
+                    ><i class="mdi mdi-repeat mdi-48px"></i></h5
+                    >
+                    <p>Process Outward Orders</p>
+                </a>
+            </div>
+
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/manifest}">
+                    <h5><i class="mdi mdi-file-document mdi-48px"></i></h5>
+                    <p>Manifest</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/handover}">
+                    <h5><i class="mdi mdi-sticker-check mdi-48px"></i></h5>
+                    <p>Handover</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/search-return-order}">
+                    <h5><i class="mdi mdi-feature-search-outline mdi-48px"></i></h5>
+                    <p>Search Return Orders</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/e-commerce/process-return-order}">
+                    <h5
+                    ><i class="mdi mdi-repeat mdi-48px"></i></h5
+                    >
+                    <p>Process Return Orders</p>
+                </a>
+            </div>
+        </div>
+        <h5>ERP</h5>
+        <div class="row">
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/initialise}">
+                    <h5><i class="mdi mdi-cog-outline mdi-48px"></i></h5>
+                    <p>Configuration</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/url-config}">
+                    <h5><i class="mdi mdi-tune mdi-48px"></i></h5>
+                    <p>Magic URL Configuration</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/inventory}">
+                    <h5><i class="mdi mdi-archive mdi-48px"></i></h5>
+                    <p>Inventory</p>
+                </a>
+            </div>
+
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/listings}">
+                    <h5><i class="mdi mdi-format-list-numbered mdi-48px"></i></h5>
+                    <p>Listings</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/partner}">
+                    <h5
+                    ><i class="mdi mdi-account mdi-48px"></i></h5
+                    >
+                    <p>Partner</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/inward-order}">
+                    <h5
+                    ><i class="mdi mdi-file-download mdi-48px"></i></h5
+                    >
+                    <p>Inward Order</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/grn-posting}">
+                    <h5
+                    ><i class="mdi mdi-barcode mdi-48px"></i></h5
+                    >
+                    <p>Grn Posting</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/outward-order}">
+                    <h5
+                    ><i class="mdi mdi-file-upload mdi-48px"></i></h5
+                    >
+                    <p>Outward Order</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/process-outward-order}">
+                    <h5
+                    ><i class="mdi mdi-repeat mdi-48px"></i></h5
+                    >
+                    <p>Process Outward Orders</p>
+                </a>
+            </div>
+    <!--        <div class="col-2">-->
+    <!--            <a class="btn btn-link w-100" th:href="@{/ui/erp/inventory}">-->
+    <!--                <h5-->
+    <!--                ><i class="mdi mdi-archive mdi-48px"></i></h5-->
+    <!--                >-->
+    <!--                <p>Inventory</p>-->
+    <!--            </a>-->
+    <!--        </div>-->
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/sales-posting}">
+                    <h5
+                    ><i class="mdi mdi-forward mdi-48px"></i></h5
+                    >
+                    <p>Sales-Posting</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/return-posting}">
+                    <h5
+                    ><i class="mdi mdi-repeat mdi-48px"></i></h5
+                    >
+                    <p>Returns-Posting</p>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/erp/gate-pass}">
+                    <h5
+                    ><i class="mdi mdi-file-document mdi-48px"></i></h5
+                    >
+                    <p>Gate Pass</p>
+                </a>
+            </div>
+        </div>
+        <h5>Help</h5>
+        <div class="row">
+            <div class="col-2">
+                <a class="btn btn-link w-100" th:href="@{/ui/help/documentation}">
+                    <h5
+                    ><i class="mdi mdi-feature-search-outline mdi-48px"></i></h5
+                    >
+                    <p>Documentation</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<footer th:replace="fragments/footer.html :: footer"></footer>
+
+</body>
+
+</html>

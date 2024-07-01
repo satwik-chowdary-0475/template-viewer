@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+
+<!--<com-snackbar th:replace="snippets.html :: snackbar"></com-snackbar>-->
+<div class="asim-container px-10 w-100">
+    <!-- Top row with form-->
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="erp/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="container-fluid px-sm-4">
+                <form onsubmit="return false;">
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <h5>Sku Listings</h5>
+                    <div class="form-group row">
+                        <div class="col-md-3 form-label-group">
+                            <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-erp-channel" name="erpChannelId">
+                                <option selected="" hidden="" disabled="" value="">Select ERP Channel</option>
+                            </select>
+                            <control-messages></control-messages>
+                            <label class="" for="select-erp-channel">ERP Channel</label>
+                        </div>
+                        <div class="col-md-3 form-label-group">
+                            <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-channel" name="channelId">
+                                <option selected="" hidden="" disabled="" value="">Select MarketPlace</option>
+                            </select>
+                            <control-messages></control-messages>
+                            <label class="" for="select-channel">Market Place</label>
+                        </div>
+                        <div class="col-md-1 mt-sm-auto">
+                            <span class="pointer mdi mdi-forward btn-sm btn-success"  data-toggle="tooltip" data-placement="bottom" title="Sales Posting" id="fetch-listings"></span>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    &nbsp;
+                </div>
+                <div class="row">
+                    <!-- Table -->
+                    <div class="col-12">
+                        <table class="table table-hover" id="listings-table">
+                            <thead class="thead-light">
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Container end-->
+</div>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/erp/listings.js}"></script>
+
+
+</body>
+
+</html>

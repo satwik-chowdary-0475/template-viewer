@@ -1,0 +1,58 @@
+<div class="form-group row" th:fragment="contact-fragment">
+  <div class="col-md-3 form-label-group">
+    <input class="form-control isRequired3" type="text" placeholder="Enter name" id="name" autocomplete="off" name="name">
+    <label for="name">Name</label>
+    <control-messages></control-messages>
+  </div>
+  <div class="col-md-3 form-label-group">
+    <input class="form-control isRequired3" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Enter phone number" id="phone" autocomplete="off" name="phone">
+    <label for="phone">Phone</label>
+    <control-messages></control-messages>
+  </div>
+  <div class="col-md-3 form-label-group">
+    <input class="form-control isRequired3" type="text" placeholder="Enter email address" id="email" autocomplete="off" name="email">
+    <label for="email">email</label>
+    <control-messages></control-messages>
+  </div>
+</div>
+<div th:fragment="address-fragment">
+  <div class="form-group row">
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter address line1" id="line1" autocomplete="off" name="line1">
+      <label for="line1">Line 1</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter address line2" id="line2" autocomplete="off" name="line2">
+      <label for="line2">Line 2</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter address line3" id="line3" autocomplete="off" name="line3">
+      <label for="line3">Line 3</label>
+      <control-messages></control-messages>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" id="city" placeholder="Enter city" autocomplete="off" name="city">
+      <label for="city">City</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter state" id="state" autocomplete="off" name="state">
+      <label for="state">State</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" id="country"  placeholder="Enter country" autocomplete="off" name="country">
+      <label for="country">Country</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" id="zip" placeholder="Enter postal code" autocomplete="off" name="zip">
+      <label for="zip">Zip</label>
+      <control-messages></control-messages>
+    </div>
+  </div>
+</div>

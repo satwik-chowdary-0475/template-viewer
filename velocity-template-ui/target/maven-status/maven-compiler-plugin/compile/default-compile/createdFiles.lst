@@ -1,0 +1,5 @@
+com/increff/velocity/template/ui/config/SpringConfig.class
+com/increff/velocity/template/ui/config/WebInitializer.class
+com/increff/velocity/template/ui/config/ThymeLeafConfig.class
+com/increff/velocity/template/ui/controller/SiteUIController.class
+com/increff/velocity/template/ui/config/RestappConfig.class

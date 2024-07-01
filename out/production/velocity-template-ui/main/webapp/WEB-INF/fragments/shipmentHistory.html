@@ -1,0 +1,29 @@
+<shipment-history th:fragment="shipmentHistory">
+    <div class="modal" id="shipmentHistory-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Shipment Items</h5>
+                </div>
+                <div class="modal-body">
+                    <div class ="table-responsive">
+                        <table class=" table table-hover table-sm" id="shipmentHistory-table">
+                            <thead class="thead-light">
+                            <tr>
+                                <th scope="col" style="width: 5%;">No.</th>
+                                <th scope="col" style="width: 20%;">Client SKU ID</th>
+                                <th scope="col" style="width: 30%;">Pack Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer" id="shipmentHistory-modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</shipment-history>

@@ -1,0 +1,9 @@
+{
+    "0" : "Unable To Connect To Server. Please Check Your Internet Connection.",
+    "401" : "User Unauthenticated",
+    "403" : "User Unauthorized",
+    "404" : "Caught 404 - URL Not Found",
+    "500" : "Internal Server Error",
+    "502" : "Request Timed Out",
+    "default" : "Unknown Error"
+}

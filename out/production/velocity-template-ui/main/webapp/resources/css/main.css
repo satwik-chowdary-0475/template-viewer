@@ -1,0 +1,122 @@
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+table {
+	text-align: left;
+}
+.mdi
+{
+  font-size:20px;
+}
+
+.pointer,
+.pointer:hover { cursor: pointer!important; }
+
+
+.tooltip {
+  pointer-events: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 35px; /* Set the fixed height of the footer here */
+  line-height: 40px; /* Vertically center the text there */
+  text-align: center;
+  color: rgba(255,255,255,.5);
+  background-color: #1d2124;
+}
+
+.mark {
+  background-color: #FF0!important;
+  padding: 0;
+}
+
+.material-icons {
+    vertical-align: middle;
+ }
+
+/* Navbar*/
+
+.asim-navbar {
+  background: var(--asim-navbar);
+  width: 100vw;
+}
+
+.asim-navbar a {
+  text-decoration: none;
+  color: var(--asim-navbar-text);
+}
+
+.asim-navbar a:hover {
+  text-decoration: none;
+  color: var(--asim-navbar-text-hover);
+}
+
+.asim-navbar button span {
+  color: var(--asim-navbar-text);
+}
+
+.asim-navbar button span:hover {
+  color: var(--asim-navbar-text-hover);
+}
+.dropdown-menu:li {
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.asim-dropdown-menu{
+  border-radius: 0;
+  left: auto;
+  right: 0;
+}
+
+.asim-dropdown-menu a {
+  color: var(--asim-text);
+}
+
+.asim-dropdown-menu a:hover {
+  color: var(--dark);
+}
+
+
+.sectionMenu {
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+
+.sectionMenu a{
+    display: block;
+    padding: 10px 5px;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.sectionMenu a:hover{
+    display: block;
+    text-decoration: none;
+    color: var(--asim-hover-blue);
+}
+
+.asim-container {
+  height: calc(100vh - 3.54rem);
+  margin-top: 3.54rem;
+}
+#bottom-div {
+    POSITION: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+

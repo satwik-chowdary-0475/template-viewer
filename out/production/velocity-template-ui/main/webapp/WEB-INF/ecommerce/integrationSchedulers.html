@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"></com-navbar>
+<div class="asim-container px-10 w-100">
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="ecommerce/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="form-group row">
+                <div class="col-md-3 form-label-group">
+                    <select class="mr-0 form-control custom-select custom-select-sm isRequired2"
+                            id="select-channel-new-orders" name="select-channel">
+                        <option selected="" hidden="" disabled="" value="">Select Channel</option>
+                    </select>
+                    <control-messages></control-messages>
+                </div>
+                <div class="col-md-2 mt-auto">
+                    <button class="btn-sm btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" id="select-channel">Select Channel</button></td>
+                </div>
+                <div class="col-md-5 form-label-group">
+                    <small class="form-text text-muted">
+                        Select the channel you are testing for.
+                    </small>
+                </div>
+            </div>
+            <hr>
+
+            <div class="form-group row">
+                <div class="col-md-3 form-label-group">
+                    <select class="mr-0 form-control custom-select custom-select-sm isRequired2"
+                            id="select-location-orders" name="select-location">
+                        <option selected="" hidden="" disabled="" value="">Select Location</option>
+                    </select>
+                    <control-messages></control-messages>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-3 mt-auto">
+                <h6>Fetch New Orders</h6>
+                </div>
+                <div class="col-md-1 mt-auto">
+                    <label class="d-md-none col-12">&nbsp;</label>
+                    <span class="pointer mdi mdi-forward btn-sm btn-success" data-toggle="tooltip"
+                          data-placement="bottom" title="Fetch New Orders" id="new-orders"></span>
+                </div>
+                <div class="col-md-5 form-label-group">
+                    <small class="form-text text-muted">
+                        Triggers fetch new orders scheduler call of CIMS.
+                    </small>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-3 mt-auto">
+                    <h6>Fetch Pending Orders</h6>
+                </div>
+                <div class="col-md-1 mt-auto">
+                    <label class="d-md-none col-12">&nbsp;</label>
+                    <span class="pointer mdi mdi-forward btn-sm btn-success" data-toggle="tooltip"
+                          data-placement="bottom" title="Fetch Pending Orders" id="pending-orders"></span>
+                </div>
+                <div class="col-md-5 form-label-group">
+                    <small class="form-text text-muted">
+                        Triggers sync pending orders scheduler call of CIMS.
+                    </small>
+                </div>
+            </div>
+
+            <div class="form-group row">
+
+                    <div class="col-md-3 mt-auto">
+                        <h6>Sync Cancelled Orders</h6>
+                    </div>
+                <div class="col-md-1 mt-auto">
+                    <label class="d-md-none col-12">&nbsp;</label>
+                    <span class="pointer mdi mdi-forward btn-sm btn-success" data-toggle="tooltip"
+                          data-placement="bottom" title="Fetch Cancelled Orders" id="cancelled-orders"></span>
+                </div>
+                <div class="col-md-5 form-label-group">
+                    <small class="form-text text-muted">
+                        Triggers sync cancelled orders scheduler call of CIMS.
+                    </small>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group row">
+                <div class="col-md-2 mt-auto">
+                    <h6>Force Sync Orders</h6>
+                </div>
+                <div class="col-md-3 form-label-group">
+                    <input class="form-control isRequired3" placeholder="Search" type="text" id="channelOrderId"
+                           autocomplete="off" name="channelOrderId">
+                    <label for="channelOrderId">Channel Order Id</label>
+                </div>
+                <div class="col-md-3 form-label-group">
+                    <select class="mr-0 form-control custom-select custom-select-sm isRequired2"
+                            id="select-location-force-sync-orders" name="select-location">
+                        <option selected="" hidden="" disabled="" value="">Select Location</option>
+                    </select>
+                    <control-messages></control-messages>
+                </div>
+                <div class="col-md-1 mt-auto">
+                    <label class="d-md-none col-12">&nbsp;</label>
+                    <span class="pointer mdi mdi-forward btn-sm btn-success" data-toggle="tooltip"
+                          data-placement="bottom" title="Sync Orders" id="force-sync-orders"></span>
+                </div>
+            </div>
+            <div  class="form-group row">
+                <div class="col-md-4 form-label-group">
+                    <small class="form-text text-muted">
+                        Triggers forec sync new orders scheduler call of CIMS.
+                    </small>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group row">
+                <div class="col-md-2 mt-auto">
+                    <h6>Sync Orders Statuses</h6>
+                </div>
+                <div class="col-md-3 form-label-group">
+                    <select class="mr-0 form-control custom-select custom-select-sm isRequired2"
+                            id="select-location-sync-orders" name="select-location">
+                        <option selected="" hidden="" disabled="" value="">Select Location</option>
+                    </select>
+                    <control-messages></control-messages>
+                </div>
+                <div class="col-md-3 mt-auto">
+                <div class="product-file">
+                    <input type="file" class="custom-file-input" id="product-file">
+                    <label class="custom-file-label" for="product-file" id="product-file-name">Choose
+                        file</label>
+                </div>
+                </div>
+                <div class="col-md-1 mt-auto">
+                <a th:href="@{/resources/csv/sample-sync-orders.csv}" target="_blank">Download Sample</a>
+                </div>
+                <div class="col-md-1 mt-auto">
+                    <label class="d-md-none col-12">&nbsp;</label>
+                    <span class="pointer mdi mdi-forward btn-sm btn-success" data-toggle="tooltip"
+                          data-placement="bottom" title="Force Sync Orders" id="sync-orders"></span>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-md-7 form-label-group">
+                    <small class="form-text text-muted">
+                        Triggers sync status of orders scheduler call of CIMS.
+                    </small>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+</div>
+
+<asim-audit th:replace="fragments/audit.html :: audit"></asim-audit>
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<script th:src="@{/resources/js/ecommerce/integrationSchedulers.js}"></script>
+</body>
+
+</html>

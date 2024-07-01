@@ -1,0 +1,58 @@
+<div class="form-group row" th:fragment="shipping-contact-fragment">
+  <div class="col-md-3 form-label-group">
+    <input class="form-control isRequired3" type="text" placeholder="Enter name" id="shippingName" autocomplete="off" name="name">
+    <label for="shippingName">Name</label>
+    <control-messages></control-messages>
+  </div>
+  <div class="col-md-3 form-label-group">
+    <input class="form-control isRequired3" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Enter phone number" id="shippingPhone" autocomplete="off" name="phone">
+    <label for="shippingPhone">Phone</label>
+    <control-messages></control-messages>
+  </div>
+  <div class="col-md-3 form-label-group">
+    <input class="form-control isRequired3" type="text" placeholder="Enter email address" id="shippingEmail" autocomplete="off" name="email">
+    <label for="shippingEmail">email</label>
+    <control-messages></control-messages>
+  </div>
+</div>
+<div th:fragment="shipping-address-fragment">
+  <div class="form-group row">
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter address line1" id="shippingLine1" autocomplete="off" name="line1">
+      <label for="shippingLine1">Line 1</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter address line2" id="shippingLine2" autocomplete="off" name="line2">
+      <label for="shippingLine2">Line 2</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter address line3" id="shippingLine3" autocomplete="off" name="line3">
+      <label for="shippingLine3">Line 3</label>
+      <control-messages></control-messages>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" id="shippingCity" placeholder="Enter city" autocomplete="off" name="city">
+      <label for="shippingCity">City</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" placeholder="Enter state" id="shippingState" autocomplete="off" name="state">
+      <label for="shippingState">State</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" id="shippingCountry"  placeholder="Enter country" autocomplete="off" name="country">
+      <label for="shippingCountry">Country</label>
+      <control-messages></control-messages>
+    </div>
+    <div class="col-md-3 form-label-group">
+      <input class="form-control isRequired3" type="text" id="shippingZip" placeholder="Enter postal code" autocomplete="off" name="zip">
+      <label for="shippingZip">Zip</label>
+      <control-messages></control-messages>
+    </div>
+  </div>
+</div>

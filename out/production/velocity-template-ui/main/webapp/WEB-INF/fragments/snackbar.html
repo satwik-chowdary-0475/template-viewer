@@ -1,0 +1,10 @@
+<asim-snackbar th:fragment="snackbar">
+    <div class="bg-dark text-light p-3 py-sm-2 d-inline-flex align-items-center position-fixed rounded snackbar"></div>
+    <div class="p-3 d-flex flex-column position-fixed rounded shadow-sm notify-dialog">
+      <h5 class="font-weight-light d-flex align-items-center justify-content-between px-0">
+        <span></span>
+        <i class="material-icons pointer" onclick="dismissDialog();">clear</i>
+      </h5>
+      <p class="mt-2"></p>
+    </div>
+</asim-snackbar>

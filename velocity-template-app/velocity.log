@@ -1,0 +1,867 @@
+2024-06-30 18:26:54,906 - Initializing Velocity, Calling init()...
+2024-06-30 18:26:54,906 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:26:54,906 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:26:54,906 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:26:54,906 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:26:54,906 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:26:54,906 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:26:54,911 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2024-06-30 18:26:54,920 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:26:54,921 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:26:54,922 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:26:54,922 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:26:54,923 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:26:54,923 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:26:54,923 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:26:54,924 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:26:54,925 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:26:54,925 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:26:54,945 - Created '20' parsers.
+2024-06-30 18:26:54,950 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:26:54,950 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2024-06-30 18:26:54,950 - Velocimacro : Default library not found.
+2024-06-30 18:26:54,951 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:26:54,951 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:26:54,951 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:26:54,951 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:28:46,397 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:28:46,398 - Initializing Velocity, Calling init()...
+2024-06-30 18:28:46,398 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:28:46,398 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:28:46,398 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:28:46,398 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:28:46,398 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:28:46,398 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:28:46,402 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:28:46,402 - Do unicode file recognition:  false
+2024-06-30 18:28:46,403 - FileResourceLoader : adding path '.'
+2024-06-30 18:28:46,403 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:28:46,405 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:28:46,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:28:46,409 - Created '20' parsers.
+2024-06-30 18:28:46,409 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:28:46,410 - Velocimacro : Default library not found.
+2024-06-30 18:28:46,410 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:28:46,410 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:28:46,410 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:28:46,410 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:28:46,511 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:28:46,511 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-06-30 18:28:46,512 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-06-30 18:28:46,512 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:28:46,512 - Velocimacro : added VM writeDimension: source=Template name
+2024-06-30 18:28:46,512 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:28:46,535 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:28:46,540 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:28:46,547 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:28:46,548 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+- RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:28:46,548 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-06-30 18:29:06,805 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:29:06,807 - Initializing Velocity, Calling init()...
+2024-06-30 18:29:06,808 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:29:06,808 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:29:06,808 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:29:06,808 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:29:06,808 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:29:06,808 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:29:06,811 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2024-06-30 18:29:06,819 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:29:06,822 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:29:06,823 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:29:06,824 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:29:06,824 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:29:06,824 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:29:06,825 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:29:06,826 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:29:06,826 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:29:06,827 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:29:06,849 - Created '20' parsers.
+2024-06-30 18:29:06,853 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:29:06,854 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2024-06-30 18:29:06,854 - Velocimacro : Default library not found.
+2024-06-30 18:29:06,854 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:29:06,854 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:29:06,854 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:29:06,854 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:41:08,117 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:41:08,117 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:41:08,117 - Initializing Velocity, Calling init()...
+2024-06-30 18:41:08,117 - Initializing Velocity, Calling init()...
+2024-06-30 18:41:08,117 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:41:08,117 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:41:08,118 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:41:08,118 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:41:08,118 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:41:08,118 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:41:08,118 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:41:08,118 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:41:08,118 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:41:08,118 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:41:08,118 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:41:08,118 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:41:08,124 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:41:08,124 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:41:08,125 - Do unicode file recognition:  false
+2024-06-30 18:41:08,125 - Do unicode file recognition:  false
+2024-06-30 18:41:08,126 - FileResourceLoader : adding path '.'
+2024-06-30 18:41:08,126 - FileResourceLoader : adding path '.'
+2024-06-30 18:41:08,126 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:41:08,126 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:41:08,131 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:41:08,132 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:41:08,132 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:41:08,134 - Created '20' parsers.
+2024-06-30 18:41:08,134 - Created '20' parsers.
+2024-06-30 18:41:08,134 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:41:08,134 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:41:08,136 - Velocimacro : Default library not found.
+2024-06-30 18:41:08,136 - Velocimacro : Default library not found.
+2024-06-30 18:41:08,136 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:41:08,136 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:41:08,136 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:41:08,136 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:41:08,136 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:41:08,136 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:41:08,136 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:41:08,136 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:41:08,247 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:41:08,247 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:41:08,247 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-06-30 18:41:08,247 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-06-30 18:41:08,248 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-06-30 18:41:08,248 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-06-30 18:41:08,248 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:41:08,248 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:41:08,248 - Velocimacro : added VM writeDimension: source=Template name
+2024-06-30 18:41:08,248 - Velocimacro : added VM writeDimension: source=Template name
+2024-06-30 18:41:08,249 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:41:08,249 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:41:08,313 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:41:08,313 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:41:08,324 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:41:08,324 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:41:08,335 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:41:08,335 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:41:08,335 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-06-30 18:41:08,335 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-06-30 18:41:47,391 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:41:47,393 - Initializing Velocity, Calling init()...
+2024-06-30 18:41:47,393 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:41:47,393 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:41:47,393 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:41:47,393 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:41:47,393 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:41:47,393 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:41:47,395 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2024-06-30 18:41:47,403 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:41:47,405 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:41:47,405 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:41:47,405 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:41:47,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:41:47,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:41:47,407 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:41:47,407 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:41:47,408 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:41:47,408 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:41:47,428 - Created '20' parsers.
+2024-06-30 18:41:47,431 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:41:47,432 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2024-06-30 18:41:47,432 - Velocimacro : Default library not found.
+2024-06-30 18:41:47,432 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:41:47,432 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:41:47,432 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:41:47,432 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:42:05,584 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:42:05,584 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:42:05,586 - Initializing Velocity, Calling init()...
+2024-06-30 18:42:05,586 - Initializing Velocity, Calling init()...
+2024-06-30 18:42:05,586 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:42:05,586 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:42:05,586 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:42:05,586 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:42:05,586 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:42:05,586 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:42:05,586 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:42:05,586 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:42:05,586 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:05,586 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:05,586 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:05,586 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:05,592 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:42:05,592 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:42:05,592 - Do unicode file recognition:  false
+2024-06-30 18:42:05,592 - Do unicode file recognition:  false
+2024-06-30 18:42:05,592 - FileResourceLoader : adding path '.'
+2024-06-30 18:42:05,592 - FileResourceLoader : adding path '.'
+2024-06-30 18:42:05,593 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:42:05,593 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:42:05,594 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:42:05,597 - Created '20' parsers.
+2024-06-30 18:42:05,597 - Created '20' parsers.
+2024-06-30 18:42:05,597 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:42:05,597 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:42:05,598 - Velocimacro : Default library not found.
+2024-06-30 18:42:05,598 - Velocimacro : Default library not found.
+2024-06-30 18:42:05,598 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:42:05,598 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:42:05,598 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:42:05,598 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:42:05,598 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:42:05,598 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:42:05,598 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:42:05,598 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:42:05,656 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writePaymentMethod: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writePaymentMethod: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writeFromAddress: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writeFromAddress: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writeToAddress: source=Template name
+2024-06-30 18:42:05,656 - Velocimacro : added VM writeToAddress: source=Template name
+2024-06-30 18:42:05,657 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:42:05,657 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:42:05,657 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:42:05,657 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:42:05,670 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-06-30 18:42:05,670 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-06-30 18:42:05,675 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:05,675 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:05,679 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-06-30 18:42:05,679 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-06-30 18:42:05,679 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:05,679 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:05,680 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-06-30 18:42:05,680 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-06-30 18:42:33,215 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:42:33,217 - Initializing Velocity, Calling init()...
+2024-06-30 18:42:33,217 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:42:33,217 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:42:33,217 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:42:33,217 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:42:33,217 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:33,217 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:33,219 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2024-06-30 18:42:33,228 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:42:33,231 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:42:33,232 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:42:33,232 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:42:33,233 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:42:33,233 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:42:33,234 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:42:33,235 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:42:33,236 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:42:33,237 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:42:33,256 - Created '20' parsers.
+2024-06-30 18:42:33,259 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:42:33,260 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2024-06-30 18:42:33,260 - Velocimacro : Default library not found.
+2024-06-30 18:42:33,260 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:42:33,260 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:42:33,260 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:42:33,260 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:42:38,348 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:42:38,348 - Log4JLogChute initialized using file 'velocity.log'
+2024-06-30 18:42:38,349 - Initializing Velocity, Calling init()...
+2024-06-30 18:42:38,349 - Initializing Velocity, Calling init()...
+2024-06-30 18:42:38,349 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:42:38,349 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-06-30 18:42:38,349 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:42:38,349 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-06-30 18:42:38,349 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:42:38,349 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-06-30 18:42:38,349 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:42:38,349 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-06-30 18:42:38,349 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:38,349 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:38,349 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:38,349 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-06-30 18:42:38,355 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:42:38,355 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-06-30 18:42:38,356 - Do unicode file recognition:  false
+2024-06-30 18:42:38,356 - Do unicode file recognition:  false
+2024-06-30 18:42:38,356 - FileResourceLoader : adding path '.'
+2024-06-30 18:42:38,356 - FileResourceLoader : adding path '.'
+2024-06-30 18:42:38,356 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:42:38,356 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-06-30 18:42:38,358 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:42:38,358 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:42:38,359 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-06-30 18:42:38,361 - Created '20' parsers.
+2024-06-30 18:42:38,361 - Created '20' parsers.
+2024-06-30 18:42:38,361 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:42:38,361 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-06-30 18:42:38,362 - Velocimacro : Default library not found.
+2024-06-30 18:42:38,362 - Velocimacro : Default library not found.
+2024-06-30 18:42:38,362 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:42:38,362 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-06-30 18:42:38,362 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:42:38,362 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-06-30 18:42:38,363 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:42:38,363 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-06-30 18:42:38,363 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:42:38,363 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-06-30 18:42:38,426 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:42:38,426 - Velocimacro : added VM writeString: source=Template name
+2024-06-30 18:42:38,426 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-06-30 18:42:38,426 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeDimension: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeDimension: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:42:38,427 - Velocimacro : added VM writeDateTime: source=Template name
+2024-06-30 18:42:38,452 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:42:38,452 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:42:38,458 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:42:38,458 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:42:38,468 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:42:38,468 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:42:38,469 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-06-30 18:42:38,469 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-06-30 18:42:48,534 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-06-30 18:42:48,534 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-06-30 18:42:48,536 - Velocimacro : added VM writePaymentMethod: source=Template name
+2024-06-30 18:42:48,536 - Velocimacro : added VM writePaymentMethod: source=Template name
+2024-06-30 18:42:48,536 - Velocimacro : added VM writeFromAddress: source=Template name
+2024-06-30 18:42:48,536 - Velocimacro : added VM writeFromAddress: source=Template name
+2024-06-30 18:42:48,536 - Velocimacro : added VM writeToAddress: source=Template name
+2024-06-30 18:42:48,536 - Velocimacro : added VM writeToAddress: source=Template name
+2024-06-30 18:42:48,536 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-06-30 18:42:48,536 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-06-30 18:42:48,536 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-06-30 18:42:48,536 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-06-30 18:42:48,537 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-06-30 18:42:48,537 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-06-30 18:42:48,538 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:48,538 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:48,545 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:42:48,545 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:44:26,874 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-06-30 18:44:26,874 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-06-30 18:44:26,879 - Velocimacro : VM addition rejected : writePaymentMethod : inline not allowed to replace existing VM
+2024-06-30 18:44:26,879 - Velocimacro : VM addition rejected : writePaymentMethod : inline not allowed to replace existing VM
+2024-06-30 18:44:26,879 - Velocimacro : VM addition rejected : writeFromAddress : inline not allowed to replace existing VM
+2024-06-30 18:44:26,879 - Velocimacro : VM addition rejected : writeFromAddress : inline not allowed to replace existing VM
+2024-06-30 18:44:26,880 - Velocimacro : VM addition rejected : writeToAddress : inline not allowed to replace existing VM
+2024-06-30 18:44:26,880 - Velocimacro : VM addition rejected : writeToAddress : inline not allowed to replace existing VM
+2024-06-30 18:44:26,880 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-06-30 18:44:26,880 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-06-30 18:44:26,881 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-06-30 18:44:26,881 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-06-30 18:44:26,883 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-06-30 18:44:26,883 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-06-30 18:44:26,884 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:44:26,884 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:44:26,884 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:44:26,884 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-06-30 18:44:34,154 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-06-30 18:44:34,154 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeStringWithSpaceAfterComma : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeStringWithSpaceAfterComma : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeAddressShipping : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeAddressShipping : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeDimension : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeDimension : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-06-30 18:44:34,155 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-06-30 18:44:34,159 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:44:34,159 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-06-30 18:44:34,162 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:44:34,162 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-06-30 18:44:34,165 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:44:34,165 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-06-30 18:44:34,165 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-06-30 18:44:34,165 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 01:56:26,506 - Velocimacro : added VM writeImageUrl: source=Template name
+2024-07-01 01:56:26,506 - Velocimacro : added VM writeImageUrl: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeAddress: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeAddress: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeEmail: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeEmail: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeTaxItems: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeTaxItems: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeTaxItemsData: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeTaxItemsData: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeShippingChargeTaxBreakup: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeShippingChargeTaxBreakup: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeCodChargeTaxBreakup: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeCodChargeTaxBreakup: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeShippingCODTaxItem: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : added VM writeShippingCODTaxItem: source=Template name
+2024-07-01 01:56:26,511 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 01:56:26,511 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 01:56:26,511 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 01:56:26,511 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 01:56:26,512 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 01:56:26,512 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 01:56:26,524 - Velocimacro : added VM capitalizeWords: source=Template name
+2024-07-01 01:56:26,524 - Velocimacro : added VM capitalizeWords: source=Template name
+2024-07-01 01:56:26,528 - Left side ($invoiceCancelled) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. Template name[line 762, column 29]
+2024-07-01 01:56:26,528 - Left side ($invoiceCancelled) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. Template name[line 762, column 29]
+2024-07-01 01:56:26,530 - Null reference [template 'Template name', line 73, column 72] : $data.logoUrl cannot be resolved.
+2024-07-01 01:56:26,530 - Null reference [template 'Template name', line 73, column 72] : $data.logoUrl cannot be resolved.
+2024-07-01 01:56:26,530 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:56:26,530 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:56:26,530 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:56:26,530 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:56:26,533 - Null reference [template 'Template name', line 412, column 29] : $data.quantity cannot be resolved.
+2024-07-01 01:56:26,533 - Null reference [template 'Template name', line 412, column 29] : $data.quantity cannot be resolved.
+2024-07-01 01:56:26,536 - Null reference [template 'Template name', line 421, column 29] : $math.roundTo(2, $data.subBaseAmount) cannot be resolved.
+2024-07-01 01:56:26,536 - Null reference [template 'Template name', line 421, column 29] : $math.roundTo(2, $data.subBaseAmount) cannot be resolved.
+2024-07-01 01:56:26,538 - Null reference [template 'Template name', line 424, column 29] : $math.roundTo(2, $data.subTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,538 - Null reference [template 'Template name', line 424, column 29] : $math.roundTo(2, $data.subTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,540 - Null reference [template 'Template name', line 430, column 29] : $math.roundTo(2, $data.subTotalAmount) cannot be resolved.
+2024-07-01 01:56:26,540 - Null reference [template 'Template name', line 430, column 29] : $math.roundTo(2, $data.subTotalAmount) cannot be resolved.
+2024-07-01 01:56:26,541 - Null reference [template 'Template name', line 455, column 29] : $math.roundTo(2, $data.baseShippingAmount) cannot be resolved.
+2024-07-01 01:56:26,541 - Null reference [template 'Template name', line 455, column 29] : $math.roundTo(2, $data.baseShippingAmount) cannot be resolved.
+2024-07-01 01:56:26,541 - Null reference [template 'Template name', line 458, column 29] : $math.roundTo(2, $data.shippingTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,541 - Null reference [template 'Template name', line 458, column 29] : $math.roundTo(2, $data.shippingTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,541 - Null reference [template 'Template name', line 464, column 29] : $math.roundTo(2, $data.shippingAmount) cannot be resolved.
+2024-07-01 01:56:26,541 - Null reference [template 'Template name', line 464, column 29] : $math.roundTo(2, $data.shippingAmount) cannot be resolved.
+2024-07-01 01:56:26,542 - Null reference [template 'Template name', line 489, column 29] : $math.roundTo(2, $data.baseCodChargeAmount) cannot be resolved.
+2024-07-01 01:56:26,542 - Null reference [template 'Template name', line 489, column 29] : $math.roundTo(2, $data.baseCodChargeAmount) cannot be resolved.
+2024-07-01 01:56:26,542 - Null reference [template 'Template name', line 492, column 29] : $math.roundTo(2, $data.codChargeTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,542 - Null reference [template 'Template name', line 492, column 29] : $math.roundTo(2, $data.codChargeTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 498, column 29] : $math.roundTo(2, $data.codChargeAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 498, column 29] : $math.roundTo(2, $data.codChargeAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 558, column 29] : $math.roundTo(2, $data.finalBaseAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 558, column 29] : $math.roundTo(2, $data.finalBaseAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 561, column 29] : $math.roundTo(2, $data.finalTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 561, column 29] : $math.roundTo(2, $data.finalTaxAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 567, column 29] : $math.roundTo(2, $data.finalTotalAmount) cannot be resolved.
+2024-07-01 01:56:26,543 - Null reference [template 'Template name', line 567, column 29] : $math.roundTo(2, $data.finalTotalAmount) cannot be resolved.
+2024-07-01 01:56:26,544 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,544 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,545 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,545 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,545 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,545 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,545 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:56:26,545 - RHS of #set statement is null. Context will not be modified. Template name[line 890, column 1]
+2024-07-01 01:57:19,936 - Velocimacro : VM addition rejected : writeImageUrl : inline not allowed to replace existing VM
+2024-07-01 01:57:19,936 - Velocimacro : VM addition rejected : writeImageUrl : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeFromAddress : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeFromAddress : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeAddress : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeAddress : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeEmail : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeEmail : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeTaxItems : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeTaxItems : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeTaxItemsData : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeTaxItemsData : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 01:57:19,940 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 01:57:19,941 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 01:57:19,941 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 01:57:19,947 - Left side ($invoiceCancelled) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. Template name[line 762, column 29]
+2024-07-01 01:57:19,947 - Left side ($invoiceCancelled) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. Template name[line 762, column 29]
+2024-07-01 01:57:19,948 - Null reference [template 'Template name', line 81, column 63] : $data.logoUrl cannot be resolved.
+2024-07-01 01:57:19,948 - Null reference [template 'Template name', line 81, column 63] : $data.logoUrl cannot be resolved.
+2024-07-01 01:57:19,948 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:57:19,948 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:57:19,948 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:57:19,948 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 01:57:19,950 - Null reference [template 'Template name', line 333, column 29] : $data.quantity cannot be resolved.
+2024-07-01 01:57:19,950 - Null reference [template 'Template name', line 333, column 29] : $data.quantity cannot be resolved.
+2024-07-01 01:57:19,952 - Null reference [template 'Template name', line 342, column 29] : $math.roundTo(2, $data.subBaseAmount) cannot be resolved.
+2024-07-01 01:57:19,952 - Null reference [template 'Template name', line 342, column 29] : $math.roundTo(2, $data.subBaseAmount) cannot be resolved.
+2024-07-01 01:57:19,954 - Null reference [template 'Template name', line 345, column 29] : $math.roundTo(2, $data.subTaxAmount) cannot be resolved.
+2024-07-01 01:57:19,954 - Null reference [template 'Template name', line 345, column 29] : $math.roundTo(2, $data.subTaxAmount) cannot be resolved.
+2024-07-01 01:57:19,954 - Null reference [template 'Template name', line 348, column 29] : $math.roundTo(2, $data.subTotalAmount) cannot be resolved.
+2024-07-01 01:57:19,954 - Null reference [template 'Template name', line 348, column 29] : $math.roundTo(2, $data.subTotalAmount) cannot be resolved.
+2024-07-01 01:57:19,957 - Null reference [template 'Template name', line 406, column 29] : $math.roundTo(2, $data.finalBaseAmount) cannot be resolved.
+2024-07-01 01:57:19,957 - Null reference [template 'Template name', line 406, column 29] : $math.roundTo(2, $data.finalBaseAmount) cannot be resolved.
+2024-07-01 01:57:19,958 - Null reference [template 'Template name', line 409, column 29] : $math.roundTo(2, $data.finalTaxAmount) cannot be resolved.
+2024-07-01 01:57:19,958 - Null reference [template 'Template name', line 409, column 29] : $math.roundTo(2, $data.finalTaxAmount) cannot be resolved.
+2024-07-01 01:57:19,958 - Null reference [template 'Template name', line 412, column 29] : $math.roundTo(2, $data.finalTotalAmount) cannot be resolved.
+2024-07-01 01:57:19,958 - Null reference [template 'Template name', line 412, column 29] : $math.roundTo(2, $data.finalTotalAmount) cannot be resolved.
+2024-07-01 01:57:19,958 - Null reference [template 'Template name', line 428, column 31] : $data.totalAmountInWords cannot be resolved.
+2024-07-01 01:57:19,958 - Null reference [template 'Template name', line 428, column 31] : $data.totalAmountInWords cannot be resolved.
+2024-07-01 01:57:19,959 - Null reference [template 'Template name', line 428, column 56] : $data.primaryCurrencyUnit cannot be resolved.
+2024-07-01 01:57:19,959 - Null reference [template 'Template name', line 428, column 56] : $data.primaryCurrencyUnit cannot be resolved.
+2024-07-01 01:57:19,959 - Null reference [template 'Template name', line 428, column 86] : $data.totalAmountCents cannot be resolved.
+2024-07-01 01:57:19,959 - Null reference [template 'Template name', line 428, column 86] : $data.totalAmountCents cannot be resolved.
+2024-07-01 01:57:19,959 - Null reference [template 'Template name', line 428, column 109] : $data.secondaryCurrencyUnit cannot be resolved.
+2024-07-01 01:57:19,959 - Null reference [template 'Template name', line 428, column 109] : $data.secondaryCurrencyUnit cannot be resolved.
+2024-07-01 08:57:58,893 - Log4JLogChute initialized using file 'velocity.log'
+2024-07-01 08:57:58,895 - Initializing Velocity, Calling init()...
+2024-07-01 08:57:58,896 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-07-01 08:57:58,896 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-07-01 08:57:58,896 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-07-01 08:57:58,896 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-07-01 08:57:58,896 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:57:58,896 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:57:58,902 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2024-07-01 08:57:58,911 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-07-01 08:57:58,913 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-07-01 08:57:58,914 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-07-01 08:57:58,914 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-07-01 08:57:58,915 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-07-01 08:57:58,915 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-07-01 08:57:58,915 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-07-01 08:57:58,916 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-07-01 08:57:58,917 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-07-01 08:57:58,917 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-07-01 08:57:58,936 - Created '20' parsers.
+2024-07-01 08:57:58,941 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-07-01 08:57:58,942 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2024-07-01 08:57:58,942 - Velocimacro : Default library not found.
+2024-07-01 08:57:58,942 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-07-01 08:57:58,942 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-07-01 08:57:58,942 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-07-01 08:57:58,942 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-07-01 08:58:56,638 - Log4JLogChute initialized using file 'velocity.log'
+2024-07-01 08:58:56,638 - Log4JLogChute initialized using file 'velocity.log'
+2024-07-01 08:58:56,639 - Initializing Velocity, Calling init()...
+2024-07-01 08:58:56,639 - Initializing Velocity, Calling init()...
+2024-07-01 08:58:56,639 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-07-01 08:58:56,639 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-07-01 08:58:56,639 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-07-01 08:58:56,639 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-07-01 08:58:56,639 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-07-01 08:58:56,639 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-07-01 08:58:56,639 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-07-01 08:58:56,639 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-07-01 08:58:56,639 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:58:56,639 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:58:56,639 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:58:56,639 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:58:56,643 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-07-01 08:58:56,643 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-07-01 08:58:56,644 - Do unicode file recognition:  false
+2024-07-01 08:58:56,644 - Do unicode file recognition:  false
+2024-07-01 08:58:56,644 - FileResourceLoader : adding path '.'
+2024-07-01 08:58:56,644 - FileResourceLoader : adding path '.'
+2024-07-01 08:58:56,644 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-07-01 08:58:56,644 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-07-01 08:58:56,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-07-01 08:58:56,647 - Created '20' parsers.
+2024-07-01 08:58:56,647 - Created '20' parsers.
+2024-07-01 08:58:56,647 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-07-01 08:58:56,647 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-07-01 08:58:56,647 - Velocimacro : Default library not found.
+2024-07-01 08:58:56,647 - Velocimacro : Default library not found.
+2024-07-01 08:58:56,647 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-07-01 08:58:56,647 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-07-01 08:58:56,647 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-07-01 08:58:56,647 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-07-01 08:58:56,648 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-07-01 08:58:56,648 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-07-01 08:58:56,648 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-07-01 08:58:56,648 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-07-01 08:58:56,718 - Velocimacro : added VM writeString: source=Template name
+2024-07-01 08:58:56,718 - Velocimacro : added VM writeString: source=Template name
+2024-07-01 08:58:56,719 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-07-01 08:58:56,719 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-07-01 08:58:56,719 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-07-01 08:58:56,719 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-07-01 08:58:56,720 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-07-01 08:58:56,720 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-07-01 08:58:56,720 - Velocimacro : added VM writeDimension: source=Template name
+2024-07-01 08:58:56,720 - Velocimacro : added VM writeDimension: source=Template name
+2024-07-01 08:58:56,720 - Velocimacro : added VM writeDateTime: source=Template name
+2024-07-01 08:58:56,720 - Velocimacro : added VM writeDateTime: source=Template name
+2024-07-01 08:58:56,742 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-07-01 08:58:56,742 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-07-01 08:58:56,751 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-07-01 08:58:56,751 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-07-01 08:58:56,765 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-07-01 08:58:56,765 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-07-01 08:58:56,766 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 08:58:56,766 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 08:59:45,900 - Log4JLogChute initialized using file 'velocity.log'
+2024-07-01 08:59:45,902 - Initializing Velocity, Calling init()...
+2024-07-01 08:59:45,902 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-07-01 08:59:45,902 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-07-01 08:59:45,902 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-07-01 08:59:45,902 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-07-01 08:59:45,902 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:59:45,902 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 08:59:45,906 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2024-07-01 08:59:45,918 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-07-01 08:59:45,921 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-07-01 08:59:45,922 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-07-01 08:59:45,922 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-07-01 08:59:45,922 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-07-01 08:59:45,922 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-07-01 08:59:45,923 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-07-01 08:59:45,924 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-07-01 08:59:45,924 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-07-01 08:59:45,925 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-07-01 08:59:45,943 - Created '20' parsers.
+2024-07-01 08:59:45,946 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-07-01 08:59:45,947 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2024-07-01 08:59:45,947 - Velocimacro : Default library not found.
+2024-07-01 08:59:45,947 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-07-01 08:59:45,947 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-07-01 08:59:45,947 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-07-01 08:59:45,947 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-07-01 09:03:17,542 - Log4JLogChute initialized using file 'velocity.log'
+2024-07-01 09:03:17,542 - Log4JLogChute initialized using file 'velocity.log'
+2024-07-01 09:03:17,543 - Initializing Velocity, Calling init()...
+2024-07-01 09:03:17,543 - Initializing Velocity, Calling init()...
+2024-07-01 09:03:17,543 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-07-01 09:03:17,543 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2024-07-01 09:03:17,543 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-07-01 09:03:17,543 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2024-07-01 09:03:17,543 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-07-01 09:03:17,543 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2024-07-01 09:03:17,543 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-07-01 09:03:17,543 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2024-07-01 09:03:17,543 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 09:03:17,543 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 09:03:17,543 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 09:03:17,543 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2024-07-01 09:03:17,546 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-07-01 09:03:17,546 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2024-07-01 09:03:17,547 - Do unicode file recognition:  false
+2024-07-01 09:03:17,547 - Do unicode file recognition:  false
+2024-07-01 09:03:17,547 - FileResourceLoader : adding path '.'
+2024-07-01 09:03:17,547 - FileResourceLoader : adding path '.'
+2024-07-01 09:03:17,547 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-07-01 09:03:17,547 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-07-01 09:03:17,548 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2024-07-01 09:03:17,549 - Created '20' parsers.
+2024-07-01 09:03:17,549 - Created '20' parsers.
+2024-07-01 09:03:17,549 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-07-01 09:03:17,549 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2024-07-01 09:03:17,549 - Velocimacro : Default library not found.
+2024-07-01 09:03:17,549 - Velocimacro : Default library not found.
+2024-07-01 09:03:17,549 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-07-01 09:03:17,549 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2024-07-01 09:03:17,549 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-07-01 09:03:17,549 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2024-07-01 09:03:17,549 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-07-01 09:03:17,549 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2024-07-01 09:03:17,549 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-07-01 09:03:17,549 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeString: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeString: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writePaymentMethod: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writePaymentMethod: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeFromAddress: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeFromAddress: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeToAddress: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeToAddress: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeDateTime: source=Template name
+2024-07-01 09:03:17,591 - Velocimacro : added VM writeDateTime: source=Template name
+2024-07-01 09:03:17,592 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-07-01 09:03:17,592 - Velocimacro : added VM writeBarcodeWithoutText: source=Template name
+2024-07-01 09:03:17,665 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-07-01 09:03:17,665 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-07-01 09:03:17,670 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:03:17,670 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:03:17,673 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:03:17,673 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:03:17,674 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:03:17,674 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:03:17,674 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:03:17,674 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:03:46,012 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:03:46,012 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:03:46,016 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-07-01 09:03:46,016 - Velocimacro : added VM writeStringWithSpaceAfterComma: source=Template name
+2024-07-01 09:03:46,017 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-07-01 09:03:46,017 - Velocimacro : added VM writeAddressShipping: source=Template name
+2024-07-01 09:03:46,017 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:03:46,017 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:03:46,017 - Velocimacro : added VM writeDimension: source=Template name
+2024-07-01 09:03:46,017 - Velocimacro : added VM writeDimension: source=Template name
+2024-07-01 09:03:46,017 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:03:46,017 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:03:46,018 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-07-01 09:03:46,018 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-07-01 09:03:46,019 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-07-01 09:03:46,019 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-07-01 09:03:46,032 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-07-01 09:03:46,032 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-07-01 09:03:46,032 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 09:03:46,032 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 09:09:03,932 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:09:03,932 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writePaymentMethod : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writePaymentMethod : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeFromAddress : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeFromAddress : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeToAddress : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeToAddress : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:09:03,950 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:09:03,952 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-07-01 09:09:03,952 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 25]
+2024-07-01 09:09:03,953 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:09:03,953 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:09:03,955 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:09:03,955 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:09:03,955 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:09:03,955 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:09:03,955 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:09:03,955 - Null reference [template 'Template name', line 236, column 1] : $date.format('dd/MM/yyyy', $dateTime) cannot be resolved.
+2024-07-01 09:10:29,546 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:10:29,546 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeStringWithSpaceAfterComma : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeStringWithSpaceAfterComma : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeAddressShipping : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeAddressShipping : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeDimension : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeDimension : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:10:29,549 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:10:29,551 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-07-01 09:10:29,551 - RHS of #set statement is null. Context will not be modified. Template name[line 27, column 13]
+2024-07-01 09:10:29,552 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-07-01 09:10:29,552 - Null reference [template 'null', line 84, column 57] : $item.category cannot be resolved.
+2024-07-01 09:10:29,554 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-07-01 09:10:29,554 - RHS of #set statement is null. Context will not be modified. Template name[line 211, column 13]
+2024-07-01 09:10:29,555 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 09:10:29,555 - Null reference [template 'null', line 268, column 57] : $item.category cannot be resolved.
+2024-07-01 09:10:41,686 - Velocimacro : added VM writeImageUrl: source=Template name
+2024-07-01 09:10:41,686 - Velocimacro : added VM writeImageUrl: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeAddress: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeAddress: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeEmail: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeEmail: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writePaymentTerm: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writePaymentTerm: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeTaxItems: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeTaxItems: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeTaxItemsData: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : added VM writeTaxItemsData: source=Template name
+2024-07-01 09:10:41,687 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:10:41,687 - Velocimacro : VM addition rejected : writeString : inline not allowed to replace existing VM
+2024-07-01 09:10:41,687 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:10:41,687 - Velocimacro : VM addition rejected : writeBarcodeWithoutText : inline not allowed to replace existing VM
+2024-07-01 09:10:41,688 - Velocimacro : added VM writeGst: source=Template name
+2024-07-01 09:10:41,688 - Velocimacro : added VM writeGst: source=Template name
+2024-07-01 09:10:41,688 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:10:41,688 - Velocimacro : VM addition rejected : writeDateTime : inline not allowed to replace existing VM
+2024-07-01 09:10:41,692 - Left side ($invoiceCancelled) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. Template name[line 543, column 29]
+2024-07-01 09:10:41,692 - Left side ($invoiceCancelled) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. Template name[line 543, column 29]
+2024-07-01 09:10:41,693 - Null reference [template 'Template name', line 67, column 71] : $data.logoUrl cannot be resolved.
+2024-07-01 09:10:41,693 - Null reference [template 'Template name', line 67, column 71] : $data.logoUrl cannot be resolved.
+2024-07-01 09:10:41,693 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:10:41,693 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:10:41,693 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:10:41,693 - VM #writeDateTime: too few arguments to macro. Wanted 2 got 1
+2024-07-01 09:10:41,694 - Null reference [template 'Template name', line 320, column 29] : $data.quantity cannot be resolved.
+2024-07-01 09:10:41,694 - Null reference [template 'Template name', line 320, column 29] : $data.quantity cannot be resolved.
+2024-07-01 09:10:41,697 - Null reference [template 'Template name', line 329, column 29] : $math.roundTo(2, $data.finalBaseAmount) cannot be resolved.
+2024-07-01 09:10:41,697 - Null reference [template 'Template name', line 329, column 29] : $math.roundTo(2, $data.finalBaseAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 351, column 29] : $math.roundTo(2, $data.totalCgstAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 351, column 29] : $math.roundTo(2, $data.totalCgstAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 372, column 29] : $math.roundTo(2, $data.totalSgstAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 372, column 29] : $math.roundTo(2, $data.totalSgstAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 393, column 29] : $math.roundTo(2, $data.totalIgstAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 393, column 29] : $math.roundTo(2, $data.totalIgstAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 409, column 29] : $math.roundTo(2, $data.shippingAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 409, column 29] : $math.roundTo(2, $data.shippingAmount) cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 29] : $data.totalAmountInWords cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 29] : $data.totalAmountInWords cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 54] : $data.primaryCurrencyUnit cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 54] : $data.primaryCurrencyUnit cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 84] : $data.totalAmountCents cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 84] : $data.totalAmountCents cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 107] : $data.secondaryCurrencyUnit cannot be resolved.
+2024-07-01 09:10:41,699 - Null reference [template 'Template name', line 418, column 107] : $data.secondaryCurrencyUnit cannot be resolved.
+2024-07-01 09:10:41,700 - Null reference [template 'Template name', line 427, column 29] : $math.roundTo(2, $data.finalTotalAmount) cannot be resolved.
+2024-07-01 09:10:41,700 - Null reference [template 'Template name', line 427, column 29] : $math.roundTo(2, $data.finalTotalAmount) cannot be resolved.

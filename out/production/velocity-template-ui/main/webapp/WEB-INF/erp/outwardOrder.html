@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+
+<!--<com-snackbar th:replace="snippets.html :: snackbar"></com-snackbar>-->
+<div class="asim-container px-10 w-100">
+<!-- Top row with form--> <!-- Blank Row -->
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="erp/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="container-fluid px-sm-4">
+            <form id="search-order-form" onsubmit="return false;">
+                <h5>Outward Orders</h5>
+                <div class="form-group row">
+                    <div class="col-md-3 form-label-group">
+                        <input class="form-control isRequired3" placeholder="Search" type="text" id="channelOrderId" autocomplete="off" name="channelOrderId">
+                        <label for="channelOrderId">Channel Order Id</label>
+                        <control-messages></control-messages>
+                    </div>
+                    <div class="col-md-3 form-label-group">
+                        <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-channel" name="select-channel">
+                            <option selected="" hidden="" disabled="" value="">Select Channel</option>
+                        </select>
+                        <control-messages></control-messages>
+                    </div>
+                    <div class="col-md-5 mt-auto">
+                        <label class="d-md-none col-12">&nbsp;</label>
+                        <span class="mdi mdi-search-web btn-sm btn-primary pointer" data-toggle="tooltip" data-placement="bottom" title="Search Order" id="search-order"></span>
+                        <a th:href="@{/resources/csv/sample-b2b-Posting.csv}" target="_blank">Download B2B-posting Sample file</a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <!-- Table -->
+                <div class="col-12 table-responsive">
+                    <table class="table table-hover" id="outward-order-table">
+                        <thead class="thead-light">
+                        <th scope="col" style="width: 30%;">Channel Order Id/Parent Order Id</th>
+                        <th scope="col" style="width: 15%;">Channel Name</th>
+                        <th scope="col" style="width: 20%;">Order Time</th>
+                        <th scope="col" style="width: 15%;">Supplier</th>
+                        <th scope="col" style="width: 15%;">Order Type</th>
+                        <th scope="col" style="width: 10%;"></th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div> <!-- Container end-->
+<asim-audit th:replace="fragments/audit.html :: audit"></asim-audit>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/erp/outwardOrder.js}"></script>
+
+
+</body>
+
+</html>

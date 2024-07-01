@@ -1,0 +1,256 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+<div class="asim-container px-10 w-100">
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="ecommerce/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <div class="row">
+                &nbsp;
+            </div>
+            <form onsubmit="return false;">
+                <div class="form-group row">
+                    <div class="col-md-3 form-label-group">
+                        <input class="form-control" placeholder="search" type="text" id="manifestId" autocomplete="off"
+                               name="manifestId">
+                        <label for="manifestId">Manifest Id</label>
+                    </div>
+                        <div class="col-md-3 mt-auto">
+                            <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-channel-main" name="select-channel">
+                                <option selected="" hidden="" disabled="" value="">Select Channel</option>
+                            </select>
+                    </div>
+                    <div class="col-md-3 mt-auto">
+                        <label class="d-md-none col-12">&nbsp;</label>
+                        <span class="mdi mdi-search-web btn-sm btn-primary pointer ml-1 mr-2" data-toggle="tooltip"
+                              data-placement="bottom" title="Search Manifest" id="show-manifest"></span>
+                        <span class="pointer mdi mdi-plus btn-sm btn-success" data-toggle="tooltip"
+                              data-placement="bottom"
+                              title="Create Manifest" id="add-manifest"></span>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Blank Row -->
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+
+                <!-- Table -->
+                <div class="col-md-12">
+                    <table class="table table-hover" id="manifest-table">
+                        <thead class="thead-light">
+                        <th scope="col" style="width: 15%;">Manifest Id</th>
+                        <th scope="col" style="width: 15%;">Channel</th>
+                        <th scope="col" style="width: 30%;">Manifest Time</th>
+                        <th scope="col" style="width: 40%;">Actions</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="modal" tabindex="-1" role="dialog" id="create-manifest-modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Create Manifest</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12">
+                                <form id="manifest-form">
+                                    <div class="form-group row">
+                                        <label class="font-weight-bold col-md-3 col-form-label text-md-right"
+                                               for="transporter">Transporter</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" placeholder="Transporter" type="text" id="transporter" autocomplete="off"
+                                                   name="transporter">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12"><small class="form-text text-muted">
+                                        Transporter or courier partner for which manifest is being created.
+                                    </small></div>
+                                    <div class="form-group row">
+                                        <label class="font-weight-bold col-md-3 col-form-label text-md-right"
+                                               for="select-channel">Channel Name</label>
+                                        <div class="col-md-9">
+                                            <select class="mr-0 form-control custom-select custom-select-sm isRequired2" id="select-channel" name="select-channel">
+                                                <option selected="" hidden="" disabled="" value="">Select Channel</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="font-weight-bold col-md-3 col-form-label text-md-left"
+                                               for="locationCode">Location Code</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" placeholder="Location Code" type="text" id="locationCode" autocomplete="off"
+                                                   name="warehouseId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12"><small class="form-text text-muted">
+                                        Location code or warehouse for which manifest is being created.
+                                    </small></div>
+                                    <div class="row">
+                                        &nbsp;
+                                    </div>
+                                    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                                        <table class=" table table-hover table-sm" id="manifest-item-table">
+                                            <thead class="thead-light">
+                                            <tr>
+                                                <th class="w-45 pl-2">Channel Order Id</th>
+                                                <th class="w-35 pl-2">Shipment Code</th>
+                                                <th class="w-35 pl-2">Awb Number</th>
+                                                <th class="w-20 pl-2">Actions</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><input class="form-control form-control-sm isRequired3" type="text"
+                                                           id="attr-channel-order-id" autocomplete="off"
+                                                           placeholder="Channel Order Id">
+                                                    <control-messages></control-messages>
+                                                </td>
+                                                <td><input class="form-control form-control-sm isRequired3" type="text"
+                                                           id="attr-shipment-code" autocomplete="off"
+                                                           placeholder="Shipment Code">
+                                                    <control-messages></control-messages>
+                                                </td>
+                                                <td><input class="form-control form-control-sm isRequired3" type="text"
+                                                           id="attr-awb-number" autocomplete="off"
+                                                           placeholder="Awb Number">
+                                                    <control-messages></control-messages>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-link p-1" data-toggle="tooltip"
+                                                            data-placement="bottom" title="Add" id="add-manifest-item"><i
+                                                            class="mdi mdi-check-bold align-middle"></i></button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Cancel
+                            </button>
+                            <button type="button" class="btn btn-primary btn-sm" id="create-manifest">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="modal" id="view-location-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLongTitle"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLongTitle">Manifest History</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                                <table class=" table table-hover table-sm" id="location-table">
+                                    <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col" style="width: 20%;">Object Type</th>
+                                        <th scope="col" style="width: 25%;">Action</th>
+                                        <th scope="col" style="width: 25%;">Action Time</th>
+                                        <th scope="col" style="width: 15%;">Request</th>
+                                        <th scope="col" style="width: 15%;">Response</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Manifest</td>
+                                        <td>Create Manifest</td>
+                                        <td>2021-02-10 10:00:00</td>
+                                        <td>
+                                            <button type="button"
+                                                    class="btn btn-outline-primary btn-sm btn-copy-password material-icons md-16"
+                                                    data-toggle="tooltip" title="" data-original-title="Copy Request">
+                                                file_copy
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                    class="btn btn-outline-primary btn-sm btn-copy-password material-icons md-16"
+                                                    data-toggle="tooltip" title="" data-original-title="Copy Response">
+                                                file_copy
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Manifest</td>
+                                        <td>Get Manifest</td>
+                                        <td>2021-02-10 11:00:00</td>
+                                        <td>
+                                            <button type="button"
+                                                    class="btn btn-outline-primary btn-sm btn-copy-password material-icons md-16"
+                                                    data-toggle="tooltip" title="" data-original-title="Copy Request">
+                                                file_copy
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                    class="btn btn-outline-primary btn-sm btn-copy-password material-icons md-16"
+                                                    data-toggle="tooltip" title="" data-original-title="Copy Response">
+                                                file_copy
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Handover</td>
+                                        <td>Handover</td>
+                                        <td>2021-02-10 12:00:00</td>
+                                        <td>
+                                            <button type="button"
+                                                    class="btn btn-outline-primary btn-sm btn-copy-password material-icons md-16"
+                                                    data-toggle="tooltip" title="" data-original-title="Copy Request">
+                                                file_copy
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button"
+                                                    class="btn btn-outline-primary btn-sm btn-copy-password material-icons md-16"
+                                                    data-toggle="tooltip" title="" data-original-title="Copy Response">
+                                                file_copy
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="manifest-modal-footer">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<asim-audit th:replace="fragments/audit.html :: audit"></asim-audit>
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<script th:src="@{/resources/js/ecommerce/manifest.js}"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragments/header.html :: head"></head>
+<body class="mb-5">
+<!--<com-navbar th:replace="site/fragment.html :: navbar"></com-navbar>-->
+<div class="container-fluid">
+    <div class="row" style="margin-top: 4rem;">
+        <div class="col-4 offset-4">
+            <div class="jumbotron mb-0">
+                <h1 class="display-4 d-flex justify-content-center">Asim</h1>
+                <p class="lead d-flex justify-content-center">A One Stop Solution For Testing</p>
+                <p class="lead mt-4">
+                <div class="row">
+                    <div class="col-sm-8 offset-2">
+                        <a class="btn btn-lg btn-outline-dark shadow"  th:href="${loginSessionUrl}">Sign In</a>
+                        <a class="btn btn-lg btn-outline-dark shadow"  th:href="${signUpUrl}">Sign Up</a>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div> <!-- End Row-->
+</div><!--container-->
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+<footer>
+    <script src="https://static.increff.com/jquery/3.3.1/jquery-3.3.1.min.js?v=2"></script>
+    <script th:src="@{/resources/js/utils.js?v=2}"></script>
+    <script th:src="@{/resources/js/rest-client.js?v=2}"></script>
+    <script th:src="@{/resources/js/index.js}"></script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"></com-navbar>
+<div class="asim-container px-10 w-100">
+    <div class="row mx-0 h-100">
+        <div class="col-2 p-0">
+            <div th:replace="help/fragments.html :: sidebar"></div>
+        </div>
+        <div class="col-md-10">
+            <!-- Blank Row -->
+            <div class="row">
+                &nbsp;
+            </div>
+            <h5>Documentation</h5>
+            <!-- Blank Row -->
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="d-flex align-items-center flex-wrap mb-3">
+                <a href="https://docs.google.com/document/d/13-QNfLui8CUDRHnvGLknzmJyK-JaoPlJoBjg_j27R0M/edit?usp=sharing"
+                   target="_blank">   Visit ASIM Documentation</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+</body>
+
+</html>

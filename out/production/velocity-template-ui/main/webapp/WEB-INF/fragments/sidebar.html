@@ -1,0 +1,124 @@
+<!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+<div class="wrapper" th:fragment="sidebar">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="collapse">
+
+        <div class="sidebar-header">
+            <a id="hide-sidebar" href="">
+                <span class="material-icons">arrow_back</span>
+            </a>
+            Navigation &nbsp; &nbsp; &nbsp;
+            <hr>   
+        </div>
+        <ul class="list-unstyled">
+            <li>
+                <a href="#common-menu" data-toggle="collapse" aria-expanded="false">
+                    <span class="material-icons">home</span>
+                    Common
+                </a>
+                <ul class="collapse list-unstyled submenu" id="common-menu">
+                    <li>
+                        <a th:href="@{/ui/common/product}">Product</a>
+                    </li>
+                    <!--<li>
+                        <a th:href="@{/ui/common/logs}">Logs</a>
+                    </li>-->
+                </ul>
+            </li>
+
+            <li>
+                <a href="#ecom-menu" data-toggle="collapse" aria-expanded="false">
+                    <span class="material-icons">add_shopping_cart</span>
+                    E-commerce
+                </a>
+                <ul class="collapse list-unstyled submenu" id="ecom-menu">
+                    <li>
+                        <a th:href="@{/ui/e-commerce/initialise}">Configuration</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/url-config}">Magic URL Configuration</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/inventory}">Inventory</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/integration-schedulers}">Integration Schedulers</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/search-outward-order}">Search Outward Order</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/process-outward-order}">Process Outward Order</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/manifest}">Manifest</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/handover}">Handover</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/search-return-order}">Search Return Orders</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/e-commerce/process-return-order}">Process Return Orders</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#erp-menu" data-toggle="collapse" aria-expanded="false">
+                    <span class="material-icons">list_alt</span>
+                    ERP
+                </a>
+                <ul class="collapse list-unstyled submenu" id="erp-menu">
+                    <li>
+                        <a th:href="@{/ui/erp/initialise}">Configuration</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/url-config}">Magic URL Configuration</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/listings}">Listings</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/partner}">Partner</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/inward-order}">B2B Inward</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/grn-posting}">Grn Posting</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/outward-order}">B2B Outward</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/sales-posting}">B2C Sales Posting</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/ui/erp/return-posting}">B2C Returns Posting</a>
+                    </li>
+                    <li>
+                        <a  th:href="@{/ui/erp/gate-pass}">Gate Pass</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#help-menu" data-toggle="collapse" aria-expanded="false">
+                    <span class="material-icons">help</span>
+                    Help
+                </a>
+                <ul class="collapse list-unstyled submenu" id="help-menu">
+                    <li>
+                        <a th:href="@{/ui/help/documentation}">Documentation</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- Dark Overlay element -->
+    <div id="overlay" class="collapse">&nbsp;</div>
+</div>

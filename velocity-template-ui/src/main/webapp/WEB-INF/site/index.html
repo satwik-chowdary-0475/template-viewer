@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="baseUrl" th:attr="content=${baseUrl}">
+    <link rel="stylesheet" th:href="@{/resources/css/variables.css}"/>
+    <link rel="stylesheet" th:href="@{/resources/css/main.css}"/>
+    <link rel="stylesheet" th:href="@{/resources/css/utils.css}"/>
+
+    <link rel="stylesheet" href="https://static.increff.com/sidebar/1.0/sidebar.css"/>
+
+    <link rel="stylesheet" href="https://static.increff.com/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <title>JSON Upload and PDF Viewer</title>
+</head>
+<body>
+<h1>Velocity Template Viewer</h1>
+<div class="upload-template">
+
+</div>
+<div class="container">
+    <div class="json-upload">
+        <h2>Upload JSON Code</h2>
+        <textarea id="jsonInput" placeholder="Paste your JSON code here..."></textarea>
+        <div>
+            <button id="beautifyJsonButton">Beautify JSON</button>
+            <label for="uploadPdfButton" id="uploadPdfLabel">Upload and Render PDF</label>
+            <input type="file" id="uploadPdfButton" name="myfile">
+        </div>
+    </div>
+    <div class="pdf-viewer">
+        <h2>PDF Viewer</h2>
+        <iframe id="pdfViewer" src="" type="application/pdf"></iframe>
+    </div>
+</div>
+
+
+<script src="https://static.increff.com/jquery/3.3.1/jquery-3.3.1.min.js?v=2"></script>
+<script th:src="@{/resources/js/index.js}"></script>
+<script th:src="@{/resources/js/rest-client.js?v=2}"></script>
+<script th:src="@{/resources/js/utils.js?v=2}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header.html :: head"></head>
+
+<body>
+<com-navbar th:replace="fragments/navbar.html :: navbar"> </com-navbar>
+
+<!--<com-snackbar th:replace="snippets.html :: snackbar"></com-snackbar>-->
+
+<!-- Top row with form-->
+<div class="asim-container px-10 w-100">
+<div class="row mx-0 h-100">
+    <div class="col-2 p-0">
+        <div th:replace="erp/fragments.html :: sidebar"></div>
+    </div>
+    <div class="col-md-10">
+        <div class="container-fluid px-sm-4">
+            <form id="search-order-form" onsubmit="return false;">
+                <h5>GRN Posting</h5>
+                <div class="form-group row">
+                    <div class="col-md-3 form-label-group">
+                        <input class="form-control isRequired3" placeholder="Search" type="text" id="search" autocomplete="off" name="channelOrderId">
+                        <label for="search">Channel Order Id</label>
+                        <control-messages></control-messages>
+                    </div>
+                    <div class="col-md-5 mt-auto">
+                        <span class="mdi mdi-search-web btn-sm btn-primary pointer" data-toggle="tooltip" data-placement="bottom" title="Search Order" id="search-order"></span>
+<!--                        <a th:href="@{/resources/csv/sample-grn.csv}" target="_blank">Download Grn Sample file</a>-->
+                    </div>
+                </div>
+                <div><small class="form-text text-muted">
+                    Search the channelOrderId for which you want to Trigger Grn posting
+                </small></div>
+            </form>
+
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <!-- Table -->
+                <div class="col-12 table-responsive">
+                    <table class="table table-hover" id="inward-order-table">
+                        <thead class="thead-light">
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="upload-grn-file-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Upload GRN File</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                &nbsp;
+                            </div>
+                            <a th:href="@{/resources/csv/sample-grn.csv}" target="_blank" hidden id="sample-grn-1">Download Template</a>
+                            <a th:href="@{/resources/csv/sample-grn-notification.csv}" target="_blank" hidden id="sample-grn-notification-1">Download Template</a>
+                            <form class = "grn-form row" id="grn-form-1" onsubmit="return false;">
+                            <input type="hidden" id="order-id-1" name="asimOrderId">
+                            <input type="hidden" id="type-1" name="type">
+                            </form>
+                            <div class = "row">
+                                <div class="grn-file">
+                                    <input type="file" class="custom-file-input" id="grn-file-1">
+                                    <label class="custom-file-label" for="grn-file-1" id="grn-file-1-name">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn-sm btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn-sm btn btn-primary" id="process-grn-file-1">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="upload-grn-file-2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Upload GRN File</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                &nbsp;
+                            </div>
+                            <a th:href="@{/resources/csv/sample-grn.csv}" target="_blank" hidden id="sample-grn-2">Download Template</a>
+                            <a th:href="@{/resources/csv/sample-grn-notification.csv}" target="_blank" hidden id="sample-grn-notification-2">Download Template</a>
+                            <form class = "grn-form row" id="grn-form-2" onsubmit="return false;">
+                                <div class="form-group col-6">
+                                    <div class="form-label-group">
+                                        <input class="form-control isRequired3" placeholder="Invoice Code" type="text" id="invoice-code" autocomplete="off" name="invoiceCode">
+                                        <label for="invoice-code">Invoice Code</label>
+                                        <control-messages></control-messages>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <div class="form-label-group">
+                                        <input class="form-control isRequired3" placeholder="AWB Number" type="text" id="awb-number" autocomplete="off" name="awbNumber">
+                                        <label for="awb-number">AWB Number</label>
+                                        <control-messages></control-messages>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="order-id-2" name="asimOrderId">
+                                <input type="hidden" id="type-2" name="type">
+                            </form>
+                            <div><small class="form-text text-muted">
+                                Provide Invoice Code and Awb number if required, otherwise will be generated randomly
+                            </small></div>
+                            <div class = "row">
+                                <div class="grn-file">
+                                    <input type="file" class="custom-file-input" id="grn-file-2">
+                                    <label class="custom-file-label" for="grn-file-2" id="grn-file-2-name">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn-sm btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn-sm btn btn-primary" id="process-grn-file-2">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+</div>
+</div>
+<!-- Container end-->
+<asim-snackbar th:replace="fragments/snackbar.html :: snackbar"></asim-snackbar>
+
+<footer th:replace="fragments/footer.html :: footer"></footer>
+<script th:src="@{/resources/js/erp/grnPosting.js}"></script>
+
+</body>
+
+</html>
